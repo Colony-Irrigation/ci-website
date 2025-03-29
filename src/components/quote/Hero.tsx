@@ -33,7 +33,7 @@ export default function QuoteHero() {
             </div>
             <div className="font-sans text-4xl lg:text-6xl text-center text-white font-bold h-full items-center flex flex-col justify-center">
                 Request {text.startsWith("O") || text.startsWith("I") ? "An" : "A"} 
-                 <span className="text-5xl lg:text-8xl font-extrabold"> {text} </span> 
+                 <span className="text-5xl lg:text-8xl font-extrabold my-2 lg:my-6 italic"> {text} </span> 
                 Quote Today
             </div>
         </div>

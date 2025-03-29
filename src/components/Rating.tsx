@@ -59,9 +59,9 @@ export function GoogleRating() {
     return <Rating
     name="Google Reviews"
     stars={4.2}
-    imageH={3840}
-    imageW={2160}
-    logoImage="/logos/Google-Review-Logo.png"
+    imageH={346}
+    imageW={146}
+    logoImage="/logos/Google-Logo.jpg"
     href="https://www.google.com/search?sca_esv=4ad496d1768baf99&rlz=1C1CHBF_enUS1119US1119&biw=1920&bih=911&sxsrf=AHTn8zqz6F2eUyUPFwF6W7_kdMkpaL_-0Q:1742789023738&si=APYL9bs7Hg2KMLB-4tSoTdxuOx8BdRvHbByC_AuVpNyh0x2KzfXssLKe85tQQ5ggJX4N_6vHAq9zbUBAMMzTfx82FYCx8ZeVS1q1Zv0kGay4WDc8zTJRA4sdXZu8WxoDHb8zak-RgzsaiEqtAD2B69Vedre788q6iQ%3D%3D&q=Colony+Irrigation,+Inc.+Reviews&sa=X&ved=2ahUKEwjssraF66GMAxWYk4kEHVX1GPwQ0bkNegQILxAD&cshid=1742789037409224"
     numReviews={8}
     />
