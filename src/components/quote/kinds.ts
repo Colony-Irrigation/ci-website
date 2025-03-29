@@ -1,0 +1,19 @@
+import { createContext } from "react";
+
+export type quoteCategory = "sprinkler" | "landscaping" | "masonry" | "lawncare" | "other";
+
+export type sprinklerQuoteKind = "startup" | "repair" | "zone install" | "winterization";
+export type landscapingQuoteKind = "install" | "trimming" | "weeding";
+export type masonryQuoteKind = "path" | "patio" | "repair" | "cleaning";
+export type quoteKind = `sprinkler-${sprinklerQuoteKind}` | `landscaping-${landscapingQuoteKind}` | `masonry-${masonryQuoteKind}` | "lawncare" | "other"
+const QuoteContext = createContext<quoteKind>("other")
+
+export function getQuoteCategory(quoteKind: quoteKind): quoteCategory {
+    return quoteKind.split("-")[0] as quoteCategory;
+}
+
+export function validateQuoteCategory(category: string): quoteCategory {
+    return ["landscaping", "lawncare", "masonry", "other", "sprinkler"].includes(category) ? category as quoteCategory : "other";
+}
+
+

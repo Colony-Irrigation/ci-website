@@ -1,103 +1,122 @@
+import Email from "@/components/Email";
+import Quote from "@/components/Quote";
+import { AngiesRating, GoogleRating, YelpRating } from "@/components/Rating";
+import Review from "@/components/Review";
+import Service from "@/components/Service";
+import SlidingCarousel from "@/components/SlidingCarousel";
 import Image from "next/image";
+import Link from "next/link";
+import Carousel from "react-multi-carousel";
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    return (<>
+        <section className="bg-cover bg-center  h-130 font-sans shadow-lg">
+            <Image src="/imgs/Landscape-1.jpg" width={500} height={376} className="object-cover h-130 min-w-full fixed -z-10 brightness-30" alt="Background"/>
+            <div className="  h-full -mb-2">
+                <div className="h-full flex flex-col justify-center items-center p-4">
+                    <div className="text-5xl font-bold text-white  outline-0 outline-white rounded-lg p-4  text-center">
+                        <span>Elevate </span>
+                        <span className="">Your </span>
+                        <span>Outdoor </span>
+                        <span>Space</span>
+                    </div>
+                    <div className="text-white underline text-lg mt-2">
+                        <Link href="/quote">Get a Quote Today →</Link>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section className="bg-white rounded-t-lg ">
+            <div className="bg-amber-950/12 p-3 py-12 rounded-t-lg ">
+                <div className="text-center text-lg font-sans max-w-200 mx-auto">
+                    <div className="font-bold font-sans mb-6 text-4xl text-center">
+                            <span>Your Trusted Lawn & Landscape Experts</span>
+                            {/* <br />
+                            <span className="text-5xl font-bold">To Life</span> */}
+                            {/* <hr className="mt-2 shadow shadow-neutral-500 border-amber-950"/> */}
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+                        </div>
+                        Since 2001, we have provided <span className="font-semibold">professional</span> and <span className="font-semibold">affordable</span> lawncare, landscaping, irrigation, and hardscape design services for customers throughout all of Southeast Michigan
+                    </div>
+            </div>
+        </section>
+
+        <section className="p-3 bg-white-muted">
+            <div className="bg-gradient-to-n from-gray-100 to white rounded-lg  p-6 shadow-neutral-500">
+                <div className="font-bold font-sans mb-6 text-3xl text-center">
+                    <span>Services</span>
+                    <hr className="mt-2 shadow shadow-neutral-500 border-amber-950"/>
+
+                </div>
+                <div className="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <Service 
+                        name="Lawn Care"
+                        description="Weekly service that includes commercial grass trining, weed whipping, and walkway edging"
+                        href="/quote?category=lawncare"
+                        imgSrc="/imgs/Lawncare.avif"
+                        imgWidth={294}
+                        imgHeight={360}
+                    />
+                                        <Service 
+                        name="Landscaping"
+                        description="Professional design help, installation, removal, as well as annual trimmings and upkeep"
+                        href="/quote?category=landscaping"
+                        imgSrc="/imgs/Landscape 2.jpg"
+                        imgWidth={294}
+                        imgHeight={360}
+                    />
+                                        <Service 
+                        name="Masonry & Hardscaping"
+                        description="Installations and repairs for porches, walkways, driveway extensions, and patios"
+                        href="/quote?category=masonry"
+                        imgSrc="/imgs/Stone Staircase.webp"
+                        imgWidth={294}
+                        imgHeight={360}
+                    />
+                                        <Service 
+                        name="Sprinklers"
+                        description="Spring startups, zone installations, nozzle, pipe, & valve repairs, and winterizations"
+                        href="/quote?category=sprinkler"
+                        imgSrc="/imgs/Sprinklers.webp"
+                        imgWidth={294}
+                        imgHeight={360}
+                    />
+                </div>
+            </div>
+        </section>
+        <section className="font-sans pt-12 bg-white-muted">
+            <div className="text-center text-3xl font-bold mx-8 mt-8">
+                Trusted by Our Community for
+                <br />
+                <span className="font-extrabold text-5xl">Over 2 Decades</span>
+            </div>
+            <div className="max-w-200 mx-auto">
+                <SlidingCarousel displayTime={1000}>
+                    <Review name="Ronald Feick">We have used Tony and his crew for many years and have always received excellent service - We highly recommend them</Review>
+                    <Review name="Jen">I like them. They explain what they are doing, are friendly and always show up when stated. They even call me to schedule winterization</Review>
+                    <Review name="Shaunnah Stang">I highly recommend this company there way more reliable an affordable than most companies out there - absolutely 5 stars</Review>
+                    <Review name="Elizabeth Quan">Always responsive, always helpful.</Review>
+                    <Review name="Linda P.">Did more than expected and paid less than expected. Will be the company I go to for my irrigation needs in the future.</Review>
+                    <Review name="C. N."> I would definitely recommend them and use them again.</Review>
+                    <Review name="Jim N.">Very knowledgeable. Very honest and fair in the prices he charges. I highly recommend them</Review>
+                    <Review name="Ron W.">Excellent, efficient, informative</Review>
+                </SlidingCarousel>
+                {/* <Carousel responsive={{mobile: {
+                    breakpoint: {min: 0, max: Infinity},
+                    items: 1
+                }}} ssr>
+                    <div>test</div>
+                    {/* <Quote author="John Doe">These guys are the fucking goats</Quote>
+                    <Quote author="John Doe">These guys are the fucking goats</Quote>
+                    <Quote author="John Doe">These guys are the fucking goats</Quote>
+                    <Quote author="John Doe">These guys are the fucking goats</Quote> 
+                </Carousel> */}
+            </div>
+            <div className="flex justify-around max-w-200 mx-auto"> 
+                <AngiesRating />
+                <GoogleRating />
+                <YelpRating />             
+            </div>
+        </section>
+    </>);
 }

@@ -1,26 +1,46 @@
 @import "tailwindcss";
+@import "./masks.css";
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --color-primary: #4a7256;
+    interpolate-size: allow-keywords;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+    --color-white-muted: var(--color-stone-100);
+    --color-primary: var(--color-green-800);
 }
 
-@media (prefers-color-scheme: dark) {
+.text-shadow-md {
+    text-shadow: 2px 2px 2px var(--tw-shadow-color);
+}
+
+@layer utilities {
+    /*
+      Chromium browsers don't render nested backdrop filters.
+      As a workaround, add 'before:' to the outer filter, along with 'before:backdrop-hack':
+  
+        <div class="before:backdrop-blur-md before:backdrop-hack>
+          <div class="backdrop-blur-md"></div>
+        </div>
+  
+      See https://stackoverflow.com/a/76207141.
+    */
+    .backdrop-hack {
+      @apply absolute inset-0 ;
+    }
+  }
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
-  }
-}
+  } 
+} */
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* background: var(--background);
+  color: var(--foreground); */
+  font-family: 'Times New Roman', Times, serif;
 }
