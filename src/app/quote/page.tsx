@@ -2,14 +2,19 @@ import Email from "@/components/Email";
 import PhoneCall from "@/components/Phonecall";
 import QuoteForm from "@/components/quote/Form";
 import QuoteHero from "@/components/quote/Hero";
+import { Suspense } from "react";
 
-export default function QuotePage(props: {type: string}) {
+export default function QuotePage() {
     return <div className="pt-20">
         <section className="">
-           <QuoteHero />
+            <Suspense fallback={null}>
+                <QuoteHero />
+            </Suspense>
         </section>
         <section>
-            <QuoteForm />
+            <Suspense fallback={null}>
+                <QuoteForm />
+            </Suspense>
         </section>
         <section>
             <div className="shadow-md bg-amber-950/12 m-4 p-4 rounded-lg shadow-neutral-500 font-sans max-w-220 mx-auto">
