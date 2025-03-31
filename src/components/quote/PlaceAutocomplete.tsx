@@ -18,10 +18,10 @@ interface PlaceAutocompleteProps {
   }
   
 const API_KEY = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
-console.log(API_KEY)
 
 function PlaceAutocompleteInner({onPlaceSelect}:PlaceAutocompleteProps ) {
-    onPlaceSelect ??= r => console.log(r)
+    onPlaceSelect ??= r => void 0;
+
     const [placeAutocomplete, setPlaceAutocomplete] =
         useState<google.maps.places.Autocomplete | null>(null);
     const inputRef = useRef<HTMLInputElement>(null);

@@ -1,7 +1,6 @@
 "use server";
 import {createTransport} from "nodemailer";
 
-console.log(process.env.INTERNAL_EMAIL_ADDRESS, process.env.INTERNAL_EMAIL_PASSWORD)
 const transport = createTransport({
     service: "gmail",
     auth: {
@@ -26,7 +25,7 @@ Home Address: ${address}
 Requested Quote For: ${jobKind}
 ${extraMessage && `Note:\n${extraMessage}`}
 
-Request processed at ${new Date().toLocaleString()}`; 
+Request processed at ${new Date().toLocaleString("en-US", {timeZone: "EST"})}`; 
 
         transport.sendMail({
             from: process.env.INTERNAL_EMAIL_ADDRESS,

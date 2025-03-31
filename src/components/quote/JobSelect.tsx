@@ -57,10 +57,6 @@ jobsToTitles.lawncare = jobsToTitles["lawncare-lawncare"]
 delete jobsToTitles["lawncare-lawncare"]
 
 
-
-console.log(jobsToTitles)
-
-
 export default function JobSelect() {    
     const router = useRouter()
     const pathname = usePathname()
