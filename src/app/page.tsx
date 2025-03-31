@@ -6,11 +6,10 @@ import Service from "@/components/Service";
 import SlidingCarousel from "@/components/SlidingCarousel";
 import Image from "next/image";
 import Link from "next/link";
-import Carousel from "react-multi-carousel";
 
 export default function Home() {
     return (<>
-        <section className="bg-cover bg-center  h-130 font-sans shadow-lg bg-[url(/imgs/Landscape-1.jpg)] bg-cover bg-center bg-scroll md:bg-fixed ">
+        <section className="bg-cover bg-center  h-130 font-sans shadow-lg bg-[url(/imgs/Landscape-1.jpg)] bg-cover [background-position: 50% 0%] bg-scroll md:bg-fixed ">
             <div className="backdrop-brightness-30 h-full">
                 {/* <Image src="/imgs/Landscape-1.jpg" width={500} height={376} className="object-cover h-130 min-w-full fixed -z-10 brightness-30" alt="Background"/> */}
                 <div className="  h-full -mb-2">
@@ -114,7 +113,7 @@ export default function Home() {
                     <Quote author="John Doe">These guys are the fucking goats</Quote> 
                 </Carousel> */}
             </div>
-            <div className="flex justify-around max-w-200 mx-auto"> 
+            <div className="flex justify-around max-w-200 mx-auto flex-wrap"> 
                 <AngiesRating />
                 <GoogleRating />
                 <YelpRating />             

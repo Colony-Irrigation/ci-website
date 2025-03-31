@@ -14,7 +14,7 @@ export default function QuoteKindSelection() {
 
     return <>
         <label htmlFor="kind-selection" className="ml-4 mt-2 font-bold">Kind of Job<Required /></label>
-        <select className="h-10 bg-blue-400/20 outline-2 outline-blue-300 rounded-lg">
+        <select className="h-10 bg-blue-400/20 outline-2 outline-blue-300 rounded-lg" id="kind-selection" name="jobKind">
             <Option value="1">Option 1</Option>
             <Option value="2">Option 2</Option>
             <Option value="3">Option 3</Option>

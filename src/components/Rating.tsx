@@ -18,7 +18,7 @@ function Rating(props: {
     imageH: number
     href: string
 }) {
-    return <Link href={props.href} className="rounded-lg  bg-neutral-50 shadow-sm shadow-neutral-600 aspect-square w-max p-2 flex flex-col">
+    return <Link href={props.href} className="rounded-lg  bg-neutral-50 shadow-sm shadow-neutral-600 aspect-square w-max p-2 flex flex-col m-4">
         <div className="items-center flex justify-center mt-1">
             <div className="h-6 lg:h-12 flex items-center">
                 <Image src={props.logoImage} width={props.imageW} height={props.imageH} alt={props.name + " logo"}

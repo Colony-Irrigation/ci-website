@@ -35,6 +35,9 @@ export default function RootLayout({
         className={`antialiased bg-white-muted `}
       >
         <Navbar />
+        <div className="bg-green-800 text-white font-sans p-0.5 font-semibold text-center">
+            Spring Is Staring - Schedule a Irrigation Startup Today: <PhoneCall number={7343985837}  className="underline">(734) 398-5837</PhoneCall>
+        </div>
         <main className="min-h-screen">
             {children}
         </main>
