@@ -139,7 +139,7 @@ function JobKind(props: {
             <div className="h-full grow w-min p-2 rounded-r-lg">
                 <div>
                 </div>
-                <div className="">
+                <div className="h-full overflow-hidden">
                     {props.children[0]}
                     <Link href={props.readMoreHref} className="text-neutral-500 text-sm pl-2 underline">Read More</Link>
                 </div>
