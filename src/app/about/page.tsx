@@ -20,6 +20,7 @@ export default function AboutPage() {
                             src="/Projects/98/IMG_0100.JPEG"
                             alt="Colony Irrigation team at work"
                             fill
+                            priority
                             className="object-cover"
                         />
                     </div>

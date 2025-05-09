@@ -38,7 +38,6 @@ export default function ProjectSlideshow({ project }: { project: ProjectMetadata
         emblaApi.on("select", () => setSelectedIndex(emblaApi.selectedScrollSnap()))
     }, [emblaApi]);
 
-    emblaApi?.selectedScrollSnap
 
 
     return <div>
@@ -54,6 +53,8 @@ export default function ProjectSlideshow({ project }: { project: ProjectMetadata
                                     alt={`Image ${i}`}
                                     width={imageSize.width}
                                     height={imageSize.height}
+                                    priority={i === 0}
+                                    loading="eager"
                                     src={`/Projects/${project.id}/${project.images[imageNum]}`}
                                     className="max-h-full max-w-full w-auto h-auto rounded-md shadow-md shadow-neutral-600 object-contain"
                                      />

@@ -66,7 +66,7 @@ export function AngiesRating() {
         stars={5}
         imageW={220}
         imageH={134}
-        numReviews={120}
+        numReviews={8}
         logoImage={"/logos/Angi-Logo.png"}
         href="/"
     />
@@ -80,18 +80,18 @@ export function GoogleRating() {
     imageW={346}
     logoImage="/logos/Google-Review-Logo.png"
     href="https://www.google.com/search?sca_esv=4ad496d1768baf99&rlz=1C1CHBF_enUS1119US1119&biw=1920&bih=911&sxsrf=AHTn8zqz6F2eUyUPFwF6W7_kdMkpaL_-0Q:1742789023738&si=APYL9bs7Hg2KMLB-4tSoTdxuOx8BdRvHbByC_AuVpNyh0x2KzfXssLKe85tQQ5ggJX4N_6vHAq9zbUBAMMzTfx82FYCx8ZeVS1q1Zv0kGay4WDc8zTJRA4sdXZu8WxoDHb8zak-RgzsaiEqtAD2B69Vedre788q6iQ%3D%3D&q=Colony+Irrigation,+Inc.+Reviews&sa=X&ved=2ahUKEwjssraF66GMAxWYk4kEHVX1GPwQ0bkNegQILxAD&cshid=1742789037409224"
-    numReviews={8}
+    numReviews={6}
     />
 }
 
 export function YelpRating() {
     return <Rating
     name="Yelp"
-    stars={4.7}
+    stars={5}
     imageH={188}
     imageW={465}
     logoImage="/logos/Yelp-Logo.png"
     href="https://www.yelp.com/biz/colony-irrigation-canton"
-    numReviews={8}
+    numReviews={2}
     />
 }
