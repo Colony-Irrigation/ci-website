@@ -1,0 +1,36 @@
+{
+    "tags": [
+        "Landscaping",
+        "Lawn Care",
+        "Tree Planting",
+        "Mulching",
+        "Residential Landscaping"
+    ],
+    "title": "Residential Landscaping and Lawn Care",
+    "imageOrder": [
+        2,
+        3,
+        0,
+        1
+    ],
+    "location": "Canton",
+    "imageSizes": [
+        {
+            "width": 2048,
+            "height": 1536
+        },
+        {
+            "width": 2048,
+            "height": 1536
+        },
+        {
+            "width": 2048,
+            "height": 1536
+        },
+        
+        {
+            "width": 2048,
+            "height": 1536
+        }
+    ]
+}

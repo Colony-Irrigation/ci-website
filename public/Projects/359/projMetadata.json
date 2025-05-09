@@ -1,0 +1,35 @@
+{
+    "tags": [
+        "Outdoor Kitchen",
+        "Brick Paver Patio",
+        "Fire Pit",
+        "Seat Wall",
+        "Tree Installation"
+    ],
+    "title": "Outdoor Kitchen and Patio with Seat Wall",
+    "imageOrder": [
+        0,
+        2,
+        3,
+        1
+    ],
+    "location": "Plymouth",
+    "imageSizes": [
+        {
+            "width": 2048,
+            "height": 1536
+        },
+        {
+            "width": 2048,
+            "height": 1536
+        },
+        {
+            "width": 2048,
+            "height": 1536
+        },
+        {
+            "width": 2048,
+            "height": 1536
+        }
+    ]
+}

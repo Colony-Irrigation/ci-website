@@ -1,0 +1,54 @@
+{
+    "tags": [
+        "Mulching",
+        "Planting",
+        "Stone Fire Pit",
+        "Landscaping"
+    ],
+    "title": "Mulch and Planting Project",
+    "imageOrder": [
+        0,
+        1,
+        4,
+        7,
+        3,
+        2,
+        6,
+        5
+    ],
+    "location": "Westland",
+    "imageSizes": [
+        {
+            "width": 2048,
+            "height": 1536
+        },
+        {
+            "width": 2048,
+            "height": 1536
+        },
+        {
+            "width": 2048,
+            "height": 1536
+        },
+        {
+            "width": 2048,
+            "height": 1536
+        },
+        {
+            "width": 2048,
+            "height": 1536
+        },
+        {
+            "width": 2048,
+            "height": 1536
+        },
+        {
+            "width": 2048,
+            "height": 1536
+        },
+        {
+            "width": 2048,
+            "height": 1536
+        }
+    ]
+}

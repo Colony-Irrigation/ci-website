@@ -1,0 +1,41 @@
+{
+    "tags": [
+        "Patio Installation",
+        "Firepit",
+        "Pavers",
+        "Stone Wall"
+    ],
+    "title": "Patio Cleaning & Resealing",
+    "imageOrder": [
+        5, 0, 3, 2, 1, 4
+    ],
+    "colSpan": 2,
+    "rowSpan": 2,
+    "location": "Canton",
+    "imageSizes": [
+        {
+            "width": 1556,
+            "height": 1170
+        },
+        {
+            "width": 2048,
+            "height": 1536
+        },
+        {
+            "width": 2048,
+            "height": 1536
+        },
+        {
+            "width": 2048,
+            "height": 1536
+        },
+        {
+            "width": 2048,
+            "height": 1536
+        },
+        {
+            "width": 2048,
+            "height": 1536
+        }
+    ]
+}

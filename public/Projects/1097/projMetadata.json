@@ -1,0 +1,31 @@
+{
+    "tags": [
+        "Walkway",
+        "Pavers",
+        "Landscaping",
+        "Deck",
+        "Brick House"
+    ],
+    "title": "Paver Walkway and Landscaping",
+    "imageOrder": [
+        0,
+        1,
+        2
+    ],
+    "colSpan": 2,
+    "location": "Canton",
+    "imageSizes": [
+        {
+            "width": 2048,
+            "height": 1536
+        },
+        {
+            "width": 2048,
+            "height": 1536
+        },
+        {
+            "width": 2048,
+            "height": 1536
+        }
+    ]
+}

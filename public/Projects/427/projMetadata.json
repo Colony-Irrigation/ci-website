@@ -1,0 +1,21 @@
+{
+    "tags": [
+        "Paver Patio",
+        "Back Step",
+        "Circular Design"
+    ],
+    "title": "Brick Paver Patio",
+    "imageOrder": [
+        0, 1
+    ],
+    "location": "Plymouth",
+    "imageSizes": [
+        {
+            "width": 2048,
+            "height": 1536
+        },        {
+            "width": 2048,
+            "height": 1536
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "tags": [
+        "Paver Patio",
+        "Walkway",
+        "Paver Cleaning",
+        "Stone Re-leveling"
+    ],
+    "title": "Paver Patio and Walkway",
+    "imageOrder": [
+        2,
+        4,
+        3,
+        0,
+        1
+    ],
+    "location": "Westland",
+    "imageSizes": [
+        {
+            "width": 2048,
+            "height": 1536
+        },
+        {
+            "width": 2048,
+            "height": 1536
+        },
+        {
+            "width": 2048,
+            "height": 1536
+        },
+        {
+            "width": 2048,
+            "height": 1536
+        },
+        {
+            "width": 2048,
+            "height": 1536
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "tags": [
+        "Patio Install",
+        "Fire pit",
+        "Walkway",
+        "Pavers",
+        "Masonry"
+    ],
+    "title": "Paver Patio and Walkway with Fire Pit",
+    "imageOrder": [
+        1,
+        0,
+        5, 
+        4,
+        2,
+        3
+    ],
+    "colSpan": 2,
+    "rowSpan": 2,
+    "location": "Northvile",
+    "imageSizes": [
+        {
+            "width": 2048,
+            "height": 1536
+        },
+        {
+            "width": 2048,
+            "height": 1536
+        },
+        {
+            "width": 2048,
+            "height": 1536
+        },
+        {
+            "width": 2048,
+            "height": 1536
+        },
+        {
+            "width": 2048,
+            "height": 1536
+        },
+        {
+            "width": 2048,
+            "height": 1536
+        }
+    ]
+}

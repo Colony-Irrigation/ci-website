@@ -35,13 +35,10 @@ export default function RootLayout({
         className={`antialiased bg-white-muted `}
       >
         <Navbar />
-        <div className="bg-green-800 text-white font-sans p-0.5 font-semibold text-center">
-            Spring Is Staring - Schedule a Irrigation Startup Today: <PhoneCall number={7343985837}  className="underline">(734) 398-5837</PhoneCall>
-        </div>
-        <main className="min-h-screen">
+        <main className="min-h-screen" id="site-main-content">
             {children}
         </main>
-        <footer className="bg-amber-950/70 p-4 text-center space-y-1 text-white-muted text-sm mt-12">
+        <footer className="bg-stone-800 p-4 text-center space-y-1 text-white-muted text-sm pt-8 font-sans">
             <div>Colony Irrigation - P.O. Box 6011 Plymouth, MI 48170</div>
             <div><Email address="anthony@colonyirrigation.com" >anthony@colonyirrigation.com</Email> - <PhoneCall number={7343985837}  className="underline">(734) 398-5837</PhoneCall></div>
             <div>Copyright © {new Date().getFullYear()} | All rights, images, & text reserved</div>

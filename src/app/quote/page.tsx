@@ -2,21 +2,25 @@ import Email from "@/components/Email";
 import PhoneCall from "@/components/Phonecall";
 import QuoteForm from "@/components/quote/Form";
 import QuoteHero from "@/components/quote/Hero";
+import { QuoteCategoryProvider } from "@/components/quote/kinds";
 import { Suspense } from "react";
 
 export default function QuotePage() {
     return <div className="">
-        <section className="">
-            <Suspense fallback={null}>
-                <QuoteHero />
-            </Suspense>
-        </section>
-        <section>
-            <Suspense fallback={null}>
-                <QuoteForm />
-            </Suspense>
-        </section>
-        <section>
+        <QuoteCategoryProvider>
+            <section className="">
+                <Suspense fallback={null}>
+                    <QuoteHero />
+                </Suspense>
+            </section>
+            <section>
+                <Suspense fallback={null}>
+                    <QuoteForm />
+                </Suspense>
+            </section>
+            
+        </QuoteCategoryProvider>
+        <section id="contact" className="mb-24">
             <div className="w-full px-4 flex justify-center">
 
                 <div className="shadow-md bg-amber-950/12  p-8 rounded-lg shadow-neutral-500 font-sans max-w-220 w-full">

@@ -1,0 +1,22 @@
+{
+    "tags": [
+        "Patio",
+        "Stone Cleaning",
+        "Paver Re-leveling"
+    ],
+    "title": "Paver Patio",
+    "imageOrder": [
+        0, 1
+    ],
+    "location": "Westland",
+    "imageSizes": [
+        {
+            "width": 2048,
+            "height": 1536
+        },
+        {
+            "width": 2048,
+            "height": 1536
+        }
+    ]
+}

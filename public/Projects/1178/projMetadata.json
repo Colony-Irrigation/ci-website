@@ -1,0 +1,36 @@
+{
+    "tags": [
+        "Landscaping",
+        "Mulch",
+        "Retaining Wall",
+        "Front Yard",
+        "Residential"
+    ],
+    "title": "Front Yard Landscaping with Retaining Wall",
+    "imageOrder": [
+        2,
+        3,
+        0,
+        1
+    ],
+    
+    "location": "Plymouth",
+    "imageSizes": [
+        {
+            "width": 2048,
+            "height": 1536
+        },
+        {
+            "width": 2048,
+            "height": 1536
+        },
+        {
+            "width": 2048,
+            "height": 1536
+        },
+        {
+            "width": 2048,
+            "height": 1536
+        }
+    ]
+}

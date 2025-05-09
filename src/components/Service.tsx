@@ -9,14 +9,15 @@ export default function Service(props: {
     imgHeight: number,
     imgWidth: number
 }) {
-    return <Link href={props.href} className={`relative group rounded-lg border-1 overflow-hidden h-60 bg-green-950 border-neutral-500 shadow-neutral-600 shadow-lg text-white text-center block`}
+    return <Link href={props.href} className={`relative group rounded-lg border-1 overflow-hidden h-60 bg-green-950 border-neutral-500 shadow-neutral-600 shadow-lg text-white text-center flex items-center justify-center`}
         // style={{
         //     backgroundImage: `url("${props.imgSrc}")`
 
         // }}
     >           
 
-        <img src={props.imgSrc} className="rounded-t-lg h-48 w-full "/>
+        <Image src={props.imgSrc} alt={props.name} width={props.imgWidth} height={props.imgHeight} className="object-cover w-auto h-auto min-w-full min-h-full " />
+        {/* <img src={props.imgSrc} className="rounded-t-lg h-48 w-full "/> */}
         <div className="absolute bottom-0 w-full pt-20 bg-gradient-to-b from-transparent to-green-950 to-60% pb-2">
             <h1 className="text-xl font-bold font-sans tracking-wider p-2 text-white ">
                 <span className="">{props.name}</span>

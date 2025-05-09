@@ -1,0 +1,23 @@
+{
+    "tags": [
+        "Front Step",
+        "Brick Cleaning",
+        "Masonry"
+    ],
+    "title": "Front step cleaning",
+    "imageOrder": [
+        1,
+        0
+    ],
+    "location": "Plymouth",
+    "imageSizes": [
+        {
+            "width": 2048,
+            "height": 1536
+        },
+        {
+            "width": 2048,
+            "height": 1536
+        }
+    ]
+}

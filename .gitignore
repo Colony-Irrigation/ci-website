@@ -1,5 +1,10 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+#
+tooling/*
+public/iCloud Photos
+public/iCloud Photos.zip
+
 # dependencies
 /node_modules
 /.pnp

@@ -1,12 +1,29 @@
-import Image, { StaticImageData } from "next/image"
+import { StarIcon } from "@heroicons/react/24/solid"
+import Image from "next/image"
 import Link from "next/link"
-// import imageAsset from "/public/logos/Angi.avif"
 
 function Stars({filled}: {filled: number}) {
-    return <span className="tracking-tighter inline-block relative">
-        <span className="grayscale inline-block">⭐⭐⭐⭐⭐</span>
-        <span className="absolute top-0 left-0 overflow-hidden" style={{width: `${filled/5 * 100}%`}}>⭐⭐⭐⭐⭐</span>
-    </span>
+    return (
+        <div className="flex">
+            {[1, 2, 3, 4, 5].map((star) => {
+                const fillPercentage = Math.max(0, Math.min(1, filled - (star - 1)));
+                return (
+                    <div key={star} className="relative h-6 w-6">
+                        <StarIcon
+                            className="absolute h-6 w-6 text-neutral-300"
+                            aria-hidden="true"
+                        />
+                        <div className="absolute h-full overflow-hidden" style={{ width: `${fillPercentage * 100}%` }}>
+                            <StarIcon
+                                className="h-6 w-6 text-yellow-400"
+                                aria-hidden="true"
+                            />
+                        </div>
+                    </div>
+                );
+            })}
+        </div>
+    );
 }
 
 function Rating(props: {
@@ -18,7 +35,7 @@ function Rating(props: {
     imageH: number
     href: string
 }) {
-    return <Link href={props.href} className="rounded-lg  bg-neutral-50 shadow-sm shadow-neutral-600 aspect-square w-max p-2 flex flex-col m-4">
+    return <Link href={props.href} className="rounded-lg bg-neutral-50 shadow-sm shadow-neutral-600 h-32 lg:h-40 lg:w-40 w-32 p-2 flex flex-col m-4">
         <div className="items-center flex justify-center mt-1">
             <div className="h-6 lg:h-12 flex items-center">
                 <Image src={props.logoImage} width={props.imageW} height={props.imageH} alt={props.name + " logo"}
@@ -61,7 +78,7 @@ export function GoogleRating() {
     stars={4.2}
     imageH={146}
     imageW={346}
-    logoImage="/logos/Google-Logo.jpg"
+    logoImage="/logos/Google-Review-Logo.png"
     href="https://www.google.com/search?sca_esv=4ad496d1768baf99&rlz=1C1CHBF_enUS1119US1119&biw=1920&bih=911&sxsrf=AHTn8zqz6F2eUyUPFwF6W7_kdMkpaL_-0Q:1742789023738&si=APYL9bs7Hg2KMLB-4tSoTdxuOx8BdRvHbByC_AuVpNyh0x2KzfXssLKe85tQQ5ggJX4N_6vHAq9zbUBAMMzTfx82FYCx8ZeVS1q1Zv0kGay4WDc8zTJRA4sdXZu8WxoDHb8zak-RgzsaiEqtAD2B69Vedre788q6iQ%3D%3D&q=Colony+Irrigation,+Inc.+Reviews&sa=X&ved=2ahUKEwjssraF66GMAxWYk4kEHVX1GPwQ0bkNegQILxAD&cshid=1742789037409224"
     numReviews={8}
     />

@@ -1,0 +1,47 @@
+{
+    "tags": [
+        "Paver Repair",
+        "Stone Cleaning",
+        "Moss Removal",
+        "Patio Landscaping",
+        "Bush Install"
+    ],
+    "title": "Circular Paver Patio Repair and Cleaning",
+    "imageOrder": [
+        5,
+        4,
+        3,
+        0,
+        2,
+        1
+    ],
+    "colSpan":2,
+    "rowSpan": 2,
+    "location": "Plymouth",
+    "imageSizes": [
+        {
+            "width": 2048,
+            "height": 1536
+        },
+        {
+            "width": 2048,
+            "height": 1536
+        },
+        {
+            "width": 2048,
+            "height": 1536
+        },
+        {
+            "width": 1536,
+            "height": 2048
+        },
+        {
+            "width": 2048,
+            "height": 1536
+        },
+        {
+            "width": 2048,
+            "height": 1536
+        }
+    ]
+}

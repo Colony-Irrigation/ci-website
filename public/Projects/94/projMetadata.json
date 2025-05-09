@@ -1,0 +1,25 @@
+{
+    "tags": [
+        "Paver Steps",
+        "Brick Steps",
+        "Front Entry",
+        "Masonry"
+    ],
+    "title": "Paver Steps and Walkway",
+    "imageOrder": [
+        1,
+        0
+    ],
+    "location": "Plymouth",
+    "imageSizes": [
+        {
+            "width": 2048,
+            "height": 1536
+        },
+        
+        {
+            "width": 2048,
+            "height": 1536
+        }
+    ]
+}

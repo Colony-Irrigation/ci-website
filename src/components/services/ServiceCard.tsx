@@ -1,0 +1,54 @@
+"use client";
+
+import Link from "next/link";
+import Image from "next/image";
+import { ReactNode, useEffect, useRef, useState } from "react";
+
+interface ServiceCardProps {
+    imageSrc: string;
+    imageAlt: string;
+    title: ReactNode;
+    description: ReactNode;
+    quoteLink: string;
+    id: string;
+}
+
+export default function ServiceCard({
+    imageSrc,
+    imageAlt,
+    title,
+    description,
+    quoteLink,
+    id
+}: ServiceCardProps) {
+    // const [open, setOpen] = useState(false);
+    // const [showToggle, setShowToggle] = useState(false);
+    // const textRef = useRef<HTMLParagraphElement>(null);
+
+    return (
+        <div className="p-4 border border-primary rounded-xl shadow-md relative pb-20 max-w-160" id={id}>
+            <div className="flex justify-center items-center">
+                <Image
+                    src={imageSrc}
+                    alt={imageAlt}
+                    width={500}
+                    height={400}
+                    className="rounded-lg w-full object-cover"
+                />
+            </div>
+            
+            <div className="max-w-100 mx-auto">
+
+                <h3 className="text-xl font-semibold mt-4">{title}</h3>
+                <div className="mt-2">
+                    {description}
+                </div>
+
+
+            </div>
+            <Link href={quoteLink} className="block font-sans w-full absolute bottom-0 bg-primary -ml-4  p-2 rounded-b-lg text">
+                    <div className="text-lg text-white p-1 underline text-center font-semibold">Request a Quote</div>
+                </Link>
+        </div>
+    );
+}

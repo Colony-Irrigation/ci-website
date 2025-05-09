@@ -1,0 +1,35 @@
+{
+    "tags": [
+        "Patio",
+        "Paver Patio",
+        "Fire pit",
+        "Outdoor Living",
+        "Patio Repair"
+    ],
+    "title": "Paver Patio and Fire Pit Installation",
+    "imageOrder": [
+        3,
+        2,
+        0, 
+        1
+    ],
+    "location": "Canton",
+    "imageSizes": [
+        {
+            "width": 2048,
+            "height": 1536
+        },
+        {
+            "width": 2048,
+            "height": 1536
+        },
+        {
+            "width": 2048,
+            "height": 1536
+        },
+        {
+            "width": 2048,
+            "height": 1536
+        }
+    ]
+}

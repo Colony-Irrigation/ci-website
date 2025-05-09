@@ -1,8 +1,9 @@
 "use client";
 
 import { useSearchParams } from "next/navigation";
-import { quoteCategory, validateQuoteCategory } from "./kinds";
+import { quoteCategory, QuoteCategoryContext, validateQuoteCategory } from "./kinds";
 import FadingCarousel from "../FadingCarousel";
+import { use } from "react";
 
 const categoryToText: Record<quoteCategory, string> = {
     landscaping: "Landscaping",
@@ -13,17 +14,65 @@ const categoryToText: Record<quoteCategory, string> = {
 };
 
 const categoryToImgs: Record<quoteCategory, string[]> = {
-    other: ["Lawncare.avif", "Patio with firepit.webp", "Patio with grill & wine.jpg", "Stone Staircase.webp", "Landscape-1.jpg", "Landscape 2.jpg", "Sprinklers.webp"],
-    lawncare: ["Lawncare.avif"],
-    masonry: ["Patio with firepit.webp", "Patio with grill & wine.jpg", "Stone Staircase.webp"],
-    landscaping: ["Landscape-1.jpg", "Landscape 2.jpg"],
-    sprinkler: ["Sprinklers.webp", "Lawncare.avif"]
-}
+    other: ["Beach.webp"],
+    lawncare: [
+        "Lawncare.avif", 
+        "Leaf-Blower.jpg",
+        "Landscape-1.jpg"
+    ],
+    masonry: [
+        "Clean-Stones.JPEG",
+        "Path+Step.JPEG",
+        "Pathway.JPEG",
+        "Patio-1.webp",
+        "Patio-2.JPEG",
+        "Patio-3.jpg",
+        "Stone Staircase.webp" 
+    ],
+    landscaping: [
+        "Landscape-1.jpg", 
+        "Landscape-2.jpg",
+        "Landscape-3.JPEG",
+        "Landscape-4.JPEG",
+        "Landscape-5.JPEG",
+    ],
+    sprinkler: [
+        "Sprinkler-1.webp",
+        "Sprinkler-2.jpg",
+        "Sprinkler-Box.jpg",
+    ]
+};
+
+
+// Used images (randomized a bit)
+// categoryToImgs.lawncare[0],
+// categoryToImgs.masonry[1],
+// categoryToImgs.masonry[3],
+// categoryToImgs.masonry[4],
+// categoryToImgs.masonry[5],
+// categoryToImgs.landscaping[0],
+// categoryToImgs.landscaping[2],
+// categoryToImgs.landscaping[4],
+// categoryToImgs.sprinkler[0],
+// categoryToImgs.sprinkler[1]
+
+categoryToImgs.other.push(
+    categoryToImgs.sprinkler[0],
+    categoryToImgs.masonry[1],
+    categoryToImgs.sprinkler[1],
+    categoryToImgs.masonry[3],
+    categoryToImgs.landscaping[4],
+    categoryToImgs.masonry[4],
+    categoryToImgs.lawncare[0],
+    categoryToImgs.masonry[5],
+    categoryToImgs.landscaping[0],
+    categoryToImgs.landscaping[2],
+);
+
 
 export default function QuoteHero() {
-    const searchParams = useSearchParams();
-    const quoteCategory: quoteCategory = validateQuoteCategory(searchParams.get("category") || "");
-
+    // const searchParams = useSearchParams();
+    const [quoteCategory] = use(QuoteCategoryContext)
     const text = categoryToText[quoteCategory];
 
     return <div>

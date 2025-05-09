@@ -1,0 +1,34 @@
+{
+    "tags": [
+        "Landscaping",
+        "Mulch",
+        "Planting",
+        "Flowers"
+    ],
+    "title": "Front Yard Landscaping",
+    "imageOrder": [
+        0,
+        1,
+        2,
+        3
+    ],
+    "location": "Northvile",
+    "imageSizes": [
+        {
+            "width": 2048,
+            "height": 1536
+        },
+        {
+            "width": 2048,
+            "height": 1536
+        },
+        {
+            "width": 2048,
+            "height": 1536
+        },
+        {
+            "width": 2048,
+            "height": 1536
+        }
+    ]
+}

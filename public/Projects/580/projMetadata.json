@@ -1,0 +1,31 @@
+{
+    "tags": [
+        "Paver Walkway",
+        "Paver Steps",
+        "Brick Edging",
+        "Front Entrance",
+        "Paver Patio"
+    ],
+    "title": "Paver Walkway and Entrance Steps",
+    "imageOrder": [
+        1,
+        0,
+        2
+    ],
+    "rowSpan": 2,
+    "location": "Northvile",
+    "imageSizes": [
+        {
+            "width": 2048,
+            "height": 1536
+        },
+        {
+            "width": 1536,
+            "height": 2048
+        },
+        {
+            "width": 1536,
+            "height": 2048
+        }
+    ]
+}
