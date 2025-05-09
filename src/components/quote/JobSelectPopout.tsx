@@ -36,7 +36,7 @@ export default function JobSelectPopout(props: {
                                 <Image src={"/imgs/Lawncare.jpg"} alt="Weekly lawn maintenance" width={360} height={270} />
                             </JobKind>
                             <JobKind jobKind="lawncare-seasonal" readMoreElId="lawncare-seasonal" {...drilledProps}>
-                                Comprehensive seasonal cleanups including leaf removal, dethatching, and preparing your lawn for the changing seasons.
+                                Fall and spring outdoor cleanups to prepare your lawn for the changing seasons.
                                 <Image src={"/imgs/Leaf-Blower.jpg"} alt="Seasonal lawn cleanup" width={1874} height={1412} />
                             </JobKind>
 
@@ -45,11 +45,11 @@ export default function JobSelectPopout(props: {
                         <JobCategoryHeader className="mt-16 mb-4">Irrigation</JobCategoryHeader>
                         <section className="space-y-6">
                             <JobKind jobKind="sprinkler-install" readMoreElId="sprinkler-install" {...drilledProps}>
-                                Complete sprinkler system design and installation to ensure efficient watering for your lawn and garden.
+                                Complete sprinkler system installation or expansion to ensure your lawn is thoroughly watered all summer long.
                                 <Image src={"/imgs/Sprinkler-Box.jpg"} alt="Sprinkler installation" width={1080} height={810} />
                             </JobKind>
                             <JobKind jobKind="sprinkler-startup" readMoreElId="sprinkler-startup" {...drilledProps}>
-                                Spring activation of your irrigation system including inspection, adjustments, and programming for the growing season.
+                                Spring activation and inspection fo your sprinkler system. We provide repairs, adjustments, and system reprogramming for the growing season.
                                 <Image src={"/imgs/Sprinkler-2.jpg"} alt="Sprinkler startup service" width={984} height={738} />
                             </JobKind>
                             <JobKind jobKind="sprinkler-winterization" readMoreElId="sprinkler-winterization" {...drilledProps}>
@@ -69,11 +69,11 @@ export default function JobSelectPopout(props: {
                                 <Image src={"/imgs/Landscape-5.JPEG"} alt="Landscape installation" width={2048} height={1536} />
                             </JobKind>
                             <JobKind jobKind="landscaping-mulch" readMoreElId="landscaping-mulch" {...drilledProps}>
-                                Professional mulch application to enhance curb appeal, retain moisture, and protect your plants.
+                                Professional mulch application or resurfacing to enhance curb appeal, retain moisture, and protect your plants.
                                 <Image src={"/imgs/Landscape-3.JPEG"} alt="Mulch application" width={2048} height={1536} />
                             </JobKind>
                             <JobKind jobKind="landscaping-trimming" readMoreElId="landscaping-trimming"  {...drilledProps}>
-                                Expert pruning and trimming of bushes, hedges, and ornamental plants to maintain shape and promote healthy growth.
+                                Expert pruning and trimming of bushes, hedges, and overgrown plants to maintain shape and promote healthy growth.
                                 <Image src={"/imgs/Bush-Trimming.JPG"} alt="Bush trimming" width={4032} height={3024} />
                             </JobKind>
                             <JobKind jobKind="landscaping-weeding" readMoreElId="landscaping-weeding"  {...drilledProps}>
@@ -85,7 +85,7 @@ export default function JobSelectPopout(props: {
                         <JobCategoryHeader className="mt-16 mb-4">Masonry</JobCategoryHeader>
                         <section className="space-y-6">
                             <JobKind jobKind="masonry-patio" readMoreElId="masonry-patio" {...drilledProps}>
-                                Custom patio design and installation using premium stone materials to create a beautiful outdoor living space.
+                                Custom patio design and installation using premium materials to create a beautiful outdoor living space.
                                 <Image src={"/imgs/Patio-1.webp"} alt="Stone patio" width={984} height={738} />
                             </JobKind>
                             <JobKind jobKind="masonry-path" readMoreElId="masonry-path" {...drilledProps}>
