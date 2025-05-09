@@ -21,7 +21,7 @@ const categoryToImgs: Record<quoteCategory, string[]> = {
         "Landscape-1.jpg"
     ],
     masonry: [
-        "Clean-Stones.JPEG",
+        "Cleaned-Stones.JPEG",
         "Path+Step.JPEG",
         "Pathway.JPEG",
         "Patio-1.webp",

@@ -37,7 +37,7 @@ export default function Navbar() {
 
         </nav>
         <div className=" sticky top-20 w-full z-20 bg-green-800 text-white font-sans p-0.5 font-semibold text-center  shadow-neutral-700 shadow-md">
-            Spring Is Staring - Schedule a Irrigation Startup Today: <PhoneCall number={7343985837} className="underline">(734) 398-5837</PhoneCall>
+            Have a Broken Sprinkler? Schedule a Repair Today: <PhoneCall number={7343985837} className="underline">(734) 398-5837</PhoneCall>
         </div>
     </>
 }

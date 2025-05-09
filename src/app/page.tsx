@@ -5,6 +5,7 @@ import { AngiesRating, GoogleRating, YelpRating } from "@/components/Rating";
 import Review from "@/components/Review";
 import Service from "@/components/Service";
 import SlidingCarousel from "@/components/SlidingCarousel";
+import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -141,7 +142,7 @@ export default function Home() {
                 </div>
                 <div className="text-center">
                     <Link href="/gallery" className="inline-block bg-white outline-2 outline-primary text-primary px-4 py-3 rounded-lg  text-xl font-semibold">
-                        View Our Full Gallery →
+                        View Our Full Gallery <ArrowRightIcon className="h-6 inline stroke-2"/>
                     </Link>
                 </div>
             </div>
@@ -151,15 +152,15 @@ export default function Home() {
             <div className="max-w-200 mx-auto px-4">
                 <div className="grid md:grid-cols-3 gap-12">
                     <div className="text-center p-8 rounded-2xl bg-white shadow-lg hover:shadow-xl transition-shadow">
-                        <div className="text-6xl font-bold text-amber-950 mb-4">20+</div>
+                        <div className="text-6xl font-bold text-neutral-700 mb-4">20+</div>
                         <div className="text-xl text-neutral-700">Years of Experience</div>
                     </div>
                     <div className="text-center p-8 rounded-2xl bg-white shadow-lg hover:shadow-xl transition-shadow">
-                        <div className="text-6xl font-bold text-amber-950 mb-4">1000+</div>
+                        <div className="text-6xl font-bold text-neutral-700 mb-4">1000+</div>
                         <div className="text-xl text-neutral-700">Projects Completed</div>
                     </div>
                     <div className="text-center p-8 rounded-2xl bg-white shadow-lg hover:shadow-xl transition-shadow">
-                        <div className="text-6xl font-bold text-amber-950 mb-4">100%</div>
+                        <div className="text-6xl font-bold text-neutral-700 mb-4">100%</div>
                         <div className="text-xl text-neutral-700">Satisfaction Guaranteed</div>
                     </div>
                 </div>
@@ -171,7 +172,7 @@ export default function Home() {
                 <h2 className="text-4xl font-bold mb-6">Ready to Transform Your Outdoor Space?</h2>
                 <p className="mb-12 text-xl">Get in touch today for free</p>
                 <Link href="/quote" className="inline-block bg-white text-black px-10 py-5 rounded-lg text-xl font-semibold hover:bg-neutral-100 transition-all hover:scale-105">
-                    Get Started →
+                    Get Started <ArrowRightIcon className="h-6 inline stroke-2 mb-1"/>
                 </Link>
             </div>
         </section>

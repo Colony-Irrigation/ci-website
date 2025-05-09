@@ -23,8 +23,8 @@ const sprinklerTitles: Record<sprinklerQuoteKind, ReactNode> = {
 }
 
 const lawncareTitles: Record<lawncareQuoteKind, ReactNode> = {
-    weekly: "Weekly Service",
-    seasonal: "Seasonal Cleanup"
+    weekly: "Weekly Lawncare Service",
+    seasonal: "Seasonal Lawn Cleanup"
 }
 
 const masonryTitles: Record<masonryQuoteKind, ReactNode> = {

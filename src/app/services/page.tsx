@@ -46,7 +46,7 @@ export default function ServicesPage() {
                         <h2 id="other" className="text-3xl font-bold">Custom Projects</h2>
                     </div>
                     <div className="bg-gray-50 p-6 rounded-lg">
-                        <div className="flex flex-col md:flex-row items-center justify-between">
+                        <div className="flex flex-col md:flex-row items-center ">
                             <div className="md:w-2/3 mb-6 md:mb-0 md:pr-8">
                                 <p className="text-lg font-medium mb-4">
                                     Don't see exactly what you need? We're still here to help!
@@ -69,9 +69,12 @@ export default function ServicesPage() {
                                         <span>Drainage solutions & retaining walls</span>
                                     </li>
                                 </ul>
-                                <Link href="/quote" className="bg-primary text-white py-3 px-8 rounded-md font-medium hover:bg-opacity-90 transition-colors inline-flex items-center">
-                                    Get Your Custom Quote <ArrowRightIcon className="h-8"/>
+                                <Link href="/quote" className="bg-primary text-white py-3 px-8 rounded-lg font-medium hover:bg-opacity-90 transition-colors inline-flex items-center">
+                                    Get Your Custom Quote <ArrowRightIcon className="h-6 ml-2 stroke-2"/>
                                 </Link>
+                            </div>
+                            <div className="hidden lg:block">
+                                <Image src={"/imgs/Pergola.JPEG"} width={2048} height={1536} alt="Pergola" className="h-60 w-auto rounded-xl shadow-neutral-600 shadow-sm" />
                             </div>
                             {/* <div className="md:w-1/3">
                                 <div className="border border-gray-200 p-4 rounded-lg">

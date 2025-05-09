@@ -37,17 +37,18 @@ export default function ServiceCard({
                 />
             </div>
             
-            <div className="max-w-100 mx-auto">
+            <div className="max-w-100 mx-auto lg:mt-8">
 
-                <h3 className="text-xl font-semibold mt-4">{title}</h3>
-                <div className="mt-2">
+                <h3 className="text-xl font-semibold mt-4 text-center">{title}</h3>
+                <hr />
+                <div className="mt-4 mb-8">
                     {description}
                 </div>
 
 
             </div>
-            <Link href={quoteLink} className="block font-sans w-full absolute bottom-0 bg-primary -ml-4  p-2 rounded-b-lg text">
-                    <div className="text-lg text-white p-1 underline text-center font-semibold">Request a Quote</div>
+            <Link href={quoteLink} className="flex items-center justify-center font-sans w-full absolute bottom-0 bg-primary hover:brightness-110 -ml-4  p-2 rounded-b-lg text h-20 ">
+                    <div className="text-xl text-white p-1 underline text-center font-semibold">Request a Quote</div>
                 </Link>
         </div>
     );

@@ -26,7 +26,7 @@ export default function IrrigationSection() {
                                         </ul>
                                     </div>
                                 }
-                                quoteLink="/quote?category=sprinkler"
+                                quoteLink="/quote?jobKind=sprinkler-install"
                             />
                             <ServiceCard
                                 id="sprinkler-startup"
@@ -37,8 +37,8 @@ export default function IrrigationSection() {
                                         <span>Spring Startup</span>
                                     </div>
                                 }
-                                description="We'll wake up your system after winter with thorough testing, head adjustment, programming updates, and any repairs that need to be made for the summer months"
-                                quoteLink="/quote?category=sprinkler"
+                                description="We'll wake up your system after winter with thorough testing, head adjustment, programming updates, and any repairs that need to be made for the ."
+                                quoteLink="/quote?jobKind=sprinkler-startup"
                             />
                             <ServiceCard
                                 id="sprinkler-repair"
@@ -56,7 +56,7 @@ export default function IrrigationSection() {
                                         </ul>
                                     </div>
                                 }
-                                quoteLink="/quote?category=sprinkler"
+                                quoteLink="/quote?jobKind=sprinkler-repair"
                             />
                             <ServiceCard
                                 id="sprinkler-winterization"
@@ -71,7 +71,7 @@ export default function IrrigationSection() {
                                     <div className="font-semibold">Don't risk costly freeze damage!</div>
                                     We'll blow out your entire system using commercial-grade compressors to prepare your system for winter                              
                                 </>}
-                                quoteLink="/quote?category=sprinkler"
+                                quoteLink="/quote?jobKind=sprinkler-winterization"
                             />
                         </div>
                     </div>

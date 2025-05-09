@@ -20,7 +20,7 @@ export default function LandscapingSection() {
                 title="Landscape Installation"
                 description={
                     <div>
-                        <p>Transform your yard with professional landscaping that complements whatever style you want. We'll help work you through every step of the process, from planning a design to choosing which final picture looks the bes!.</p>
+                        <p>We will define new garden beds, plant flowers, bushes, and trees, or complete any other landscaping work you are looking for. Its important to us to work <span className="font-semibold">with you</span>, through every step of the process, from initial planning to final touches. </p>
                         <p className="mt-8  font-semibold text-lg">Already have landscaping but want to revitalize it?</p>
                         <p className="mb-2 italic"> We do that too:</p>
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-2 mb-3">
@@ -51,42 +51,39 @@ export default function LandscapingSection() {
                         </div>
                     </div>
                 }
-                quoteLink="/quote?category=landscaping"
+                quoteLink="/quote?jobKind=landscaping-install"
             />
             <ServiceCard
                 id="landscaping-mulch"
                 imageSrc="/imgs/Landscape-4.JPEG"
                 imageAlt="Mulch application"
-                title={
-                    <div className="flex items-center">
-                        <span>Mulch Resurfacing</span>
-                    </div>
-                }
+                title="Mulch Resurfacing"
                 description={
                     <div>
                         <p className="mb-2">Fresh mulch does more than look good:</p>
-                        <div className="grid grid-cols-2 gap-2 gap-x-3 mb-2">
-                            <div className="flex items-center">
+                        <div className="grid grid-cols-2 gap-4 gap-x-3 mb-8 mt-4 lg:gap-6  lg:font-semibold lg:text-center outline-primary lg:outline-1 rounded-2xl lg:p-4">
+                            <div className="flex">
                                 <Check className="h-6 w-6 flex-shrink-0" />
-                                <div className="ml-2">Improves plant health</div>
+                                <div className="lg:ml-2 text-center grow">Improves plant health</div>
                             </div>
-                            <div className="flex items-center">
+                            <div className="flex">
                                 <Check className="h-6 w-6 flex-shrink-0" />
-                                <div className="ml-2">Conserves moisture</div>
+                                <div className="lg:ml-2 text-center grow">Conserves moisture</div>
                             </div>
-                            <div className="flex items-center">
+                            <div className="flex">
                                 <Check className="h-6 w-6 flex-shrink-0" />
-                                <div className="ml-2">Prevents weeds</div>
+                                <div className="lg:ml-2 text-center grow">Prevents weeds</div>
                             </div>
-                            <div className="flex items-center">
+                            <div className="flex">
                                 <Check className="h-6 w-6 flex-shrink-0" />
-                                <div className="ml-2">Defines garden areas</div>
+                                <div className="lg:ml-2 text-center grow">Defines garden areas</div>
                             </div>
                         </div>
-                        <p className="text-sm italic mt-6">Available in all common colors. <br/>Rubber mulch, lava rocks, and pea gravel cover are also available.</p>
+                        <p className="text-sm italic mt-6">Available in all common colors.</p>
+                        <p className="text-sm italic mt-2">Rubber mulch, lava rocks, and pea gravel cover are also available.</p>
                     </div>
                 }
-                quoteLink="/quote?category=landscaping"
+                quoteLink="/quote?jobKind=landscaping-mulch"
             />
             <ServiceCard
                 id="landscaping-trimming"
@@ -100,11 +97,11 @@ export default function LandscapingSection() {
                 description={
                     <div>
                         <p>
-                            We offer trimming services for all common shrubs, bushes, and plants. Regular maintenance is recommended as it prevents overgrowth and leads to fuller foliage.
+                            We offer trimming services for all your shrubs, bushes, and plants. Regular maintenance is recommended as it prevents overgrowth and leads to fuller foliage.
                         </p>
                     </div>
                 }
-                quoteLink="/quote?category=landscaping"
+                quoteLink="/quote?jobKind=landscaping-trimming"
             />
             <ServiceCard
                 id="landscaping-weeding"
@@ -126,7 +123,7 @@ export default function LandscapingSection() {
                         <p>If you encounter weeds and moss taking over your <span className="font-semibold">patio or pathway</span>, check out our <Link href={"/services#paver-cleaning"} className="text-primary underline ">Stone Cleaning & Restoration</Link> services </p>
                     </div>
                 }
-                quoteLink="/quote?category=landscaping"
+                quoteLink="/quote?jobKind=landscaping-weeding"
             />
         </div>
     </div>

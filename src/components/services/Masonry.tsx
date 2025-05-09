@@ -33,7 +33,7 @@ export default function MasonrySection() {
                         </div>
                     </div>
                 }
-                quoteLink="/quote?category=masonry"
+                quoteLink="/quote?jobKind=masonry-patio"
             />
             <ServiceCard
                 id="masonry-path"
@@ -49,7 +49,7 @@ export default function MasonrySection() {
                         <p>Connect your landscape with beautiful, functional pathways that guide movement and create visual interest. We design paths that complement your home's style and stand up to years of use.</p>
                     </div>
                 }
-                quoteLink="/quote?category=masonry"
+                quoteLink="/quote?jobKind=masonry-path"
             />
             <ServiceCard
                 id="masonry-cleaning"
@@ -69,7 +69,7 @@ export default function MasonrySection() {
                         <p>We power wash and treat your pavers to remove stains, algae, and weathering without damaging the stone. We can also reseal any areas to protect your investment for years to come.</p>
                     </div>
                 }
-                quoteLink="/quote?category=masonry"
+                quoteLink="/quote?jobKind=masonry-cleaning"
             />
             <ServiceCard
                 id="masonry-repair"
@@ -88,7 +88,7 @@ export default function MasonrySection() {
                         <p>We restore damaged stone features to like-new condition, correcting the underlying issues to prevent future problems.</p>
                     </div>
                 }
-                quoteLink="/quote?category=masonry"
+                quoteLink="/quote?jobKind=masonry-repair"
             />
         </div>
     </div>
