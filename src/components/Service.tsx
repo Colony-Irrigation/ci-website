@@ -18,7 +18,7 @@ export default function Service(props: {
 
         <Image src={props.imgSrc} alt={props.name} width={props.imgWidth} height={props.imgHeight} className="object-cover w-auto h-auto min-w-full min-h-full " />
         {/* <img src={props.imgSrc} className="rounded-t-lg h-48 w-full "/> */}
-        <div className="absolute bottom-0 w-full pt-20 bg-gradient-to-b from-transparent to-green-950 to-60% pb-2">
+        <div className="absolute bottom-0 w-full pt-20 bg-gradient-to-b from-transparent to-primary to-60% pb-2">
             <h1 className="text-xl font-bold font-sans tracking-wider p-2 text-white ">
                 <span className="">{props.name}</span>
             </h1>

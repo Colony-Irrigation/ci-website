@@ -1,14 +1,12 @@
 import Image from "next/image";
 import ServiceCard from "./ServiceCard";
+import ServiceSection from "./Section";
 
 export default function MasonrySection() {
-    return             <section className="mt-16">
-    <div className="mx-10">
-        <div className="flex items-center mb-3">
-            <h2 id="masonry" className="text-3xl font-bold">Masonry & Hardscaping</h2>
-        </div>
+    return <ServiceSection title="Masonry & Hardscaping" id="masonry" >
+
         <p className="mb-6">
-            Beautiful stone elements that add value and character to your outdoor space.
+            We install sharp looking, durable stone features, and will also gladly refurbish any brickwork you already have!
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <ServiceCard
@@ -91,7 +89,6 @@ export default function MasonrySection() {
                 quoteLink="/quote?jobKind=masonry-repair"
             />
         </div>
-    </div>
-</section>
+    </ServiceSection>
 
 }

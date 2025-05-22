@@ -1,0 +1,408 @@
+#google-maps-autocomplete {
+dialog.zlDrU-basic-dialog-element::backdrop {
+    background-color: #202124
+}
+
+@supports ((-webkit-backdrop-filter:blur(3px)) or (backdrop-filter:blur(3px))) {
+    dialog.zlDrU-basic-dialog-element::backdrop {
+        background-color: rgba(32, 33, 36, .7);
+        -webkit-backdrop-filter: blur(3px);
+        backdrop-filter: blur(3px)
+    }
+}
+
+dialog[open].zlDrU-basic-dialog-element {
+    display: flex;
+    flex-direction: column
+}
+
+dialog.zlDrU-basic-dialog-element {
+    border: none;
+    border-radius: 28px;
+    box-sizing: border-box;
+    padding: 20px 8px 8px
+}
+
+dialog.zlDrU-basic-dialog-element header {
+    align-items: center;
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 0 16px
+}
+
+dialog.zlDrU-basic-dialog-element header h2 {
+    font-family: Google Sans, Roboto, Arial, sans-serif;
+    line-height: 28px;
+    font-size: 22px;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: light-dark(#3c4043, #e8eaed);
+    margin: 0
+}
+
+dialog.zlDrU-basic-dialog-element .unARub-basic-dialog-element--content {
+    display: flex;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 13px;
+    justify-content: center;
+    padding: 0 16px 16px;
+    overflow: auto
+}
+
+.gm-ui-hover-effect {
+    opacity: .6
+}
+
+.gm-ui-hover-effect:hover {
+    opacity: 1
+}
+
+.gm-ui-hover-effect>span {
+    background-color: #000
+}
+
+@media (forced-colors:active),
+(prefers-contrast:more) {
+    .gm-ui-hover-effect>span {
+        background-color: ButtonText
+    }
+}
+
+:host {
+    display: block
+}
+
+.widget-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    /* border: 1px solid #000; */
+    border-radius: 3px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
+    width: 100%
+}
+
+button {
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: default;
+    font: inherit;
+    padding: 0
+}
+
+.input-container>button.autocomplete-icon {
+    display: none
+}
+
+.input-container {
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: normal;
+    -webkit-box-pack: space-evenly;
+    -moz-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    height: 100%;
+    -webkit-justify-content: space-evenly;
+    justify-content: space-evenly;
+    padding: 8px 12px;
+    position: relative
+}
+
+input {
+    /* -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    border: none;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    font-family: Google Sans Text, Google Sans, Roboto, Arial, sans-serif;
+    height: calc(100% - 2px);
+    min-width: 0;
+    outline: none;
+    overflow: hidden */
+}
+
+.predictions-anchor {
+    height: 0;
+    width: inherit
+}
+
+.dropdown {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(60, 64, 67, .3), 0 2px 6px rgba(60, 64, 67, .15);
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    z-index: 1000
+}
+
+.attributions,
+.dropdown {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.attributions {
+    -ms-flex-item-align: end;
+    -webkit-align-self: flex-end;
+    align-self: flex-end
+}
+
+.attributions gmp-internal-google-attribution {
+    height: 16px;
+    margin: 16px 0;
+    width: 87.11px
+}
+
+.attributions button.info-button {
+    border-radius: 28px;
+    color: #5e5e5e;
+    padding: 15px
+}
+
+.attributions button.info-button:hover {
+    background-color: color-mix(in srgb, #fff, #5e5e5e 8%);
+    cursor: pointer
+}
+
+.attributions button.info-button:focus {
+    background-color: color-mix(in srgb, #fff, #5e5e5e 10%)
+}
+
+.attributions button.info-button svg {
+    display: block;
+    width: 18px
+}
+
+.attributions dialog a {
+    color: #0b57d0;
+    font: 500 14px/20px Google Sans Text, Google Sans, Roboto, Arial, sans-serif;
+    padding: 14px 0;
+    text-decoration: none
+}
+
+.attributions dialog a svg {
+    display: inline-block;
+    vertical-align: text-bottom;
+    width: 18px
+}
+
+.attributions .disclosure-dialog-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%
+}
+
+.dropdown>ul {
+    border-top: 1px solid #e8e7e7;
+    font-family: Google Sans, Roboto, Arial, sans-serif;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: inherit
+}
+
+.dropdown>ul>li {
+    border-bottom: 1px solid #d9d9d9;
+    position: relative
+}
+
+.dropdown>ul>li:hover {
+    background-color: #e8e7e7;
+    cursor: default
+}
+
+.dropdown>ul>li[aria-selected=true] {
+    background-color: #f0f8ff
+}
+
+.focus-ring {
+    display: block;
+    left: 0;
+    top: 0
+}
+
+.full-window-autocomplete-dialog[open] {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    background-color: #fff;
+    border: none;
+    border-radius: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
+    inset: 0;
+    margin: 0;
+    max-height: unset;
+    max-width: unset;
+    overflow: visible;
+    padding: 0;
+    position: fixed;
+    width: 100%
+}
+
+.full-window-autocomplete-dialog[open] .focus-ring {
+    display: none
+}
+
+.full-window-autocomplete-dialog[open] .input-container {
+    border-radius: 0;
+    box-shadow: none;
+    height: 48px;
+    padding: 0
+}
+
+.full-window-autocomplete-dialog[open] .input-container>button.autocomplete-icon {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0iIzQ0NDc0NiIgdmlld0JveD0iMCAtOTYwIDk2MCA5NjAiPjxwYXRoIGQ9Im0zMTMtNDQwIDIyNCAyMjQtNTcgNTYtMzIwLTMyMCAzMjAtMzIwIDU3IDU2LTIyNCAyMjRoNDg3djgwSDMxM1oiLz48L3N2Zz4=);
+    background-position: 12px 12px;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    cursor: pointer;
+    display: inline;
+    height: 48px;
+    width: 48px
+}
+
+.dropdown>ul>li {
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    color: #444746;
+    font-size: 12px;
+    height: 48px
+}
+
+.dropdown>ul>li,
+.place-autocomplete-element-row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.place-autocomplete-element-row {
+    -webkit-box-align: start;
+    -moz-box-align: start;
+    -ms-flex-align: start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    width: 100%
+}
+
+.place-autocomplete-element-row .place-autocomplete-element-place-icon {
+    height: 20px;
+    margin: 6px 8px;
+    width: 20px
+}
+
+.place-autocomplete-element-row .place-autocomplete-element-place-icon-default-pin {
+    padding-top: 2px
+}
+
+.place-autocomplete-element-row .place-autocomplete-element-text-div {
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    display: inline-block;
+    line-height: 14px;
+    overflow: hidden;
+    padding: 6px 16px 6px 0;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.place-autocomplete-element-row .place-autocomplete-element-text-div .place-autocomplete-element-place-name {
+    -ms-flex-negative: 0;
+    color: #202124;
+    display: block;
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
+    font-family: Google Sans Text, Google Sans, Roboto, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.place-autocomplete-element-row .place-autocomplete-element-text-div .place-autocomplete-element-place-details {
+    color: #5f6368;
+    font-family: Google Sans Text, Google Sans, Roboto, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 16px
+}
+
+.place-autocomplete-element-row .place-autocomplete-element-text-div .place-autocomplete-element-place-result--matched {
+    color: #5f6368
+}
+
+li[aria-selected=true] .place-autocomplete-element-place-icon-marker {
+    background-position: -18px -161px
+}
+
+.full-window-autocomplete-dialog[open] .place-autocomplete-element-place-icon {
+    margin: 6px 14px
+}
+}

@@ -9,10 +9,10 @@ export default function AboutPage() {
                     <div>
                         <h2 className="text-3xl font-bold mb-4">Who We Are</h2>
                         <p className="text-lg text-neutral-700 mb-4">
-                            Colony Irrigation is a family owned business founded by Tony Haley right here in <span className="underline">Canton, Michigan</span>.  
+                            Colony Irrigation is a family owned irrigation business founded by Tony Haley right here in <span className="underline">Canton, Michigan</span>.  
                         </p>
                         <p className="text-lg text-neutral-700">
-                            Since 2001, we have been providing both commercial and residential landscaping, irrigation, and lawncare services to the surrounding communities
+                            Since 2001, we have been providing both commercial and residential landscaping, sprinkler, and lawncare services to the surrounding communities.
                         </p>
                     </div>
                     <div className="relative h-[400px] rounded-lg overflow-hidden shadow-lg">
@@ -97,7 +97,7 @@ export default function AboutPage() {
                         </p>
                     </div>
                     <div className="p-6 bg-white rounded-lg shadow-sm">
-                        <h3 className="text-xl font-semibold mb-3">Affordable</h3>
+                        <h3 className="text-xl font-semibold mb-3">Affordable</h3> 
                         <p className="text-neutral-700">
                             We offer fair and competitive pricing, and we will <span className="font-bold">never</span> surprise you with hidden fees or junk markups
                         </p>
@@ -105,7 +105,7 @@ export default function AboutPage() {
                     <div className="p-6 bg-white rounded-lg shadow-sm">
                         <h3 className="text-xl font-semibold mb-3">Expertise</h3>
                         <p className="text-neutral-700">
-                            We have been serving our customers for over 20 years, and we train all our employees in house to give you the <span className="font-bold">best possible quality of service</span>
+                            We have been serving our customers for over 20 years, and we train all our employees in house to give you the <span className="font-bold">best service possible</span>
                         </p>
                     </div>
                 </div>

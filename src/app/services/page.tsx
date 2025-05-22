@@ -27,11 +27,11 @@ export default function ServicesPage() {
                 <hr className="mx-10 mt-6 border-neutral-600 rounded-full border-1" />
             </section>
 
-            {/* Lawncare Section */}
-            <LawncareSection />
-
             {/* Irrigation Section */}
             <IrrigationSection />
+
+            {/* Lawncare Section */}
+            <LawncareSection />
 
             {/* Landscaping Section */}
             <LandscapingSection />

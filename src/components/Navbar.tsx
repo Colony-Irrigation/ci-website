@@ -3,6 +3,7 @@ import Link from "next/link"
 import MobileNavMenu from "./MobileNavMenu"
 import PhoneCall from "./Phonecall"
 import { ArrowRightIcon } from "@heroicons/react/24/solid"
+import { PhoneIcon } from "@heroicons/react/24/solid"
 
 export default function Navbar() {
     // Image is 414 x 75
@@ -36,8 +37,15 @@ export default function Navbar() {
 
 
         </nav>
-        <div className=" sticky top-20 w-full z-20 bg-green-800 text-white font-sans p-0.5 font-semibold text-center  shadow-neutral-700 shadow-md">
-            Have a Broken Sprinkler? Schedule a Repair Today: <PhoneCall number={7343985837} className="underline">(734) 398-5837</PhoneCall>
+        <div className=" py-1 sticky top-20 w-full z-20 bg-green-800 text-white font-sans p-0.5 font-semibold text-center  shadow-neutral-700 shadow-md">
+            {/* Call us today:  */}
+            {/* <br /> */}
+            Have a project in mind? Reach out today!
+            <br />
+            <PhoneCall number={7343985837} className="underline text-lg tracking-wider font-bold flex items-center justify-center ">
+                {/* Reach out today! */}
+                <PhoneIcon className="h-5 inline mr-2 mt-1"/>(734) 398-5837
+                </PhoneCall>
         </div>
     </>
 }

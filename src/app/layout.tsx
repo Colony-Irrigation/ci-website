@@ -43,7 +43,7 @@ export default function RootLayout({
             <div><Email address="anthony@colonyirrigation.com" >anthony@colonyirrigation.com</Email> - <PhoneCall number={7343985837}  className="underline">(734) 398-5837</PhoneCall></div>
             <div>Copyright © {new Date().getFullYear()} | All rights, images, & text reserved</div>
             <div><Link href="https://www.freeprivacypolicy.com/live/e8071626-51ea-4638-b867-5e7e12162879" className="underline">Privacy Policy</Link> | <Link href="/"  className="underline">Terms of use</Link></div>
-            {/* <div>Site by <Link href="https://www.linkedin.com/in/edward-badel-7472a02a3/"  className="underline">Edward Badel</Link></div> */}
+            <div>Site built by <Link href="https://www.linkedin.com/in/edward-badel-7472a02a3/"  className="underline">Edward Badel</Link></div>
         </footer>
       </body>
     </html>

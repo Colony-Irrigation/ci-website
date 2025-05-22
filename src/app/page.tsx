@@ -1,7 +1,7 @@
 import Email from "@/components/Email";
 import FadingCarousel from "@/components/FadingCarousel";
 import Quote from "@/components/Quote";
-import { AngiesRating, GoogleRating, YelpRating } from "@/components/Rating";
+import { AngiesRating, GoogleRating, NextdoorRating, YelpRating } from "@/components/Rating";
 import Review from "@/components/Review";
 import Service from "@/components/Service";
 import SlidingCarousel from "@/components/SlidingCarousel";
@@ -56,9 +56,17 @@ export default function Home() {
                 </div>
                 <div className="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     <Service
+                        name="Sprinklers"
+                        description="Spring startups, zone installations, nozzle, pipe, & valve repairs, and winterizations"
+                        href="/services#irrigation"
+                        imgSrc="/imgs/Sprinkler-1.webp"
+                        imgWidth={294}
+                        imgHeight={360}
+                    />
+                    <Service
                         name="Lawn Care"
                         description="Weekly trimming, weed whipping, and walkway edging - or a seasonal cleanup"
-                        href="/quote?category=lawncare"
+                        href="/services#lawncare"
                         imgSrc="/imgs/Lawncare.jpg"
                         imgWidth={270}
                         imgHeight={360}
@@ -66,7 +74,7 @@ export default function Home() {
                     <Service
                         name="Landscaping"
                         description="Professional design help, installation, removal, as well as annual trimmings and upkeep"
-                        href="/quote?category=landscaping"
+                        href="/services#landscaping"
                         imgSrc="/imgs/Landscape-2.jpg"
                         imgWidth={500}
                         imgHeight={376}
@@ -74,19 +82,12 @@ export default function Home() {
                     <Service
                         name="Masonry & Hardscaping"
                         description="Installations and repairs for porches, walkways, driveway extensions, and patios"
-                        href="/quote?category=masonry"
+                        href="/services#masonry"
                         imgSrc="/imgs/Stone Staircase.webp"
                         imgWidth={294}
                         imgHeight={360}
                     />
-                    <Service
-                        name="Sprinklers"
-                        description="Spring startups, zone installations, nozzle, pipe, & valve repairs, and winterizations"
-                        href="/quote?category=sprinkler"
-                        imgSrc="/imgs/Sprinkler-1.webp"
-                        imgWidth={294}
-                        imgHeight={360}
-                    />
+
                 </div>
             </div>
         </section>
@@ -109,6 +110,8 @@ export default function Home() {
                 </SlidingCarousel>
             </div>
             <div className="flex justify-around max-w-200 mx-auto flex-wrap">
+                <NextdoorRating />
+                
                 <AngiesRating />
                 <GoogleRating />
                 <YelpRating />
@@ -132,23 +135,23 @@ export default function Home() {
                             "/imgs/Patio-1.webp",
                             "/imgs/Patio-2.JPEG",
                             "/imgs/Patio-3.jpg"
-                            
+
                         ]}
                         center
-                        
+
                         displayTime={4000}
-                        // className="rounded-lg"
+                    // className="rounded-lg"
                     />
                 </div>
                 <div className="text-center">
                     <Link href="/gallery" className="inline-block bg-white outline-2 outline-primary text-primary px-4 py-3 rounded-lg  text-xl font-semibold">
-                        View Our Full Gallery <ArrowRightIcon className="h-6 inline stroke-2"/>
+                        View Our Full Gallery <ArrowRightIcon className="h-6 inline stroke-2" />
                     </Link>
                 </div>
             </div>
         </section>
 
-        <section className="py-24 font-sans">
+        {/* <section className="py-24 font-sans">
             <div className="max-w-200 mx-auto px-4">
                 <div className="grid md:grid-cols-3 gap-12">
                     <div className="text-center p-8 rounded-2xl bg-white shadow-lg hover:shadow-xl transition-shadow">
@@ -165,14 +168,14 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-        </section>
+        </section> */}
 
         <section className="bg-primary text-white py-24 font-sans rounded-t-2xl">
             <div className="max-w-200 mx-auto px-4 text-center">
                 <h2 className="text-4xl font-bold mb-6">Ready to Transform Your Outdoor Space?</h2>
                 <p className="mb-12 text-xl">Get in touch today for free</p>
                 <Link href="/quote" className="inline-block bg-white text-black px-10 py-5 rounded-lg text-xl font-semibold hover:bg-neutral-100 transition-all hover:scale-105">
-                    Get Started <ArrowRightIcon className="h-6 inline stroke-2 mb-1"/>
+                    Get Started <ArrowRightIcon className="h-6 inline stroke-2 mb-1" />
                 </Link>
             </div>
         </section>

@@ -2,15 +2,12 @@ import Image from "next/image";
 import ServiceCard from "./ServiceCard";
 import Check from "@/components/Check";
 import Link from "next/link";
+import ServiceSection from "./Section";
 
 export default function LandscapingSection() {
-    return             <section className="mt-16">
-    <div className="mx-10">
-        <div className="flex items-center mb-3">
-            <h2 id="landscaping" className="text-3xl font-bold">Landscaping</h2>
-        </div>
+    return <ServiceSection title="Landscaping" id="landscaping">
         <p className="mb-6">
-            Create an outdoor space that reflects your style and enhances your property value.
+            Create a beautiful outdoor space that reflects your style and elevates curb appeal!
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <ServiceCard
@@ -26,9 +23,9 @@ export default function LandscapingSection() {
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-2 mb-3">
                             <div className="text-center">
                                 <div className="relative w-full sm:w-40 mx-auto">
-                                    <Image 
-                                        src="/Projects/1178/IMG_1136.JPEG" 
-                                        alt="Before landscaping" 
+                                    <Image
+                                        src="/Projects/1178/IMG_1136.JPEG"
+                                        alt="Before landscaping"
                                         width={2048}
                                         height={1536}
                                         className="rounded-lg  w-auto h-auto"
@@ -38,9 +35,9 @@ export default function LandscapingSection() {
                             </div>
                             <div className="text-center">
                                 <div className="relative w-full sm:w-40 mx-auto">
-                                    <Image 
-                                        src="/Projects/1178/IMG_1179.JPEG" 
-                                        alt="After landscaping" 
+                                    <Image
+                                        src="/Projects/1178/IMG_1179.JPEG"
+                                        alt="After landscaping"
                                         width={2048}
                                         height={1536}
                                         className="rounded-lg w-auto"
@@ -126,6 +123,5 @@ export default function LandscapingSection() {
                 quoteLink="/quote?jobKind=landscaping-weeding"
             />
         </div>
-    </div>
-</section>
+    </ServiceSection>
 }
