@@ -12,7 +12,7 @@ export default function AboutPage() {
                             Colony Irrigation is a family owned irrigation business founded by Tony Haley right here in <span className="underline">Canton, Michigan</span>.  
                         </p>
                         <p className="text-lg text-neutral-700">
-                            Since 2001, we have been providing both commercial and residential landscaping, sprinkler, and lawncare services to the surrounding communities.
+                            Since 2003, we have been providing both commercial and residential landscaping, sprinkler, and lawncare services to the surrounding communities.
                         </p>
                     </div>
                     <div className="relative h-[400px] rounded-lg overflow-hidden shadow-lg">
