@@ -4,7 +4,7 @@ const landscapingTitles: Record<landscapingQuoteKind, string> = {
     install: "Landscaping Install",
     mulch: "Mulch Resurfacing",
     trimming: "Bush & Hedge Trimming",
-    weeding: "Weeding"
+    // weeding: "Weeding"
 }
 
 const sprinklerTitles: Record<sprinklerQuoteKind, string> = {

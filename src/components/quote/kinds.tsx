@@ -6,7 +6,7 @@ import { createContext, PropsWithChildren, useState } from "react";
 export type quoteCategory = "sprinkler" | "landscaping" | "masonry" | "lawncare" | "other";
 
 export type sprinklerQuoteKind = "startup" | "repair" | "install" | "winterization";
-export type landscapingQuoteKind = "install" | "trimming" | "weeding" | "mulch";
+export type landscapingQuoteKind = "install" | "trimming"  | "mulch";
 export type masonryQuoteKind = "path" | "patio" | "repair" | "cleaning";
 export type lawncareQuoteKind = `weekly` | "seasonal"
 export type quoteKind = `sprinkler-${sprinklerQuoteKind}` | `landscaping-${landscapingQuoteKind}` | `masonry-${masonryQuoteKind}` | `lawncare-${lawncareQuoteKind}` | "other"

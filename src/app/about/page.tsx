@@ -30,7 +30,7 @@ export default function AboutPage() {
             <section className="mb-20">
                 <h2 className="text-3xl font-bold mb-6">Areas We Serve</h2>
                 <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-6">
-                    {["Plymouth", "Canton", "Northville", "Westland", "Livonia"].map(city => (
+                    {["Plymouth", "Canton", "Northville", "Westland", "Livonia", "Novi"].map(city => (
                         <div key={city} className="bg-primary/10 rounded-lg p-4 text-center shadow-sm">
                             <h3 className="text-xl font-semibold text-primary">{city}</h3>
                         </div>

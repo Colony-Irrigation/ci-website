@@ -76,10 +76,10 @@ export default function JobSelectPopout(props: {
                                 Expert pruning and trimming of bushes, hedges, and overgrown plants to maintain shape and promote healthy growth.
                                 <Image src={"/imgs/Bush-Trimming.JPG"} alt="Bush trimming" width={4032} height={3024} />
                             </JobKind>
-                            <JobKind jobKind="landscaping-weeding" readMoreElId="landscaping-weeding"  {...drilledProps}>
+                            {/* <JobKind jobKind="landscaping-weeding" readMoreElId="landscaping-weeding"  {...drilledProps}>
                                 Thorough weed removal and prevention services to keep your garden beds and landscaped areas looking pristine.
                                 <Image src={"/imgs/Landscape-2.jpg"} alt="Garden weeding" width={500} height={376} />
-                            </JobKind>
+                            </JobKind> */}
                         </section>
 
                         <JobCategoryHeader className="mt-16 mb-4">Masonry</JobCategoryHeader>
