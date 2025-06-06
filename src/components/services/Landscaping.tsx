@@ -100,7 +100,7 @@ export default function LandscapingSection() {
                 }
                 quoteLink="/quote?jobKind=landscaping-trimming"
             />
-            <ServiceCard
+{/*             <ServiceCard
                 id="landscaping-weeding"
                 imageSrc="/imgs/Landscape-2.jpg"
                 imageAlt="Garden weeding"
@@ -121,7 +121,7 @@ export default function LandscapingSection() {
                     </div>
                 }
                 quoteLink="/quote?jobKind=landscaping-weeding"
-            />
+            /> */}
         </div>
     </ServiceSection>
 }
