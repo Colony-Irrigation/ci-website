@@ -43,7 +43,7 @@ export default function AboutPage() {
             <section className="mb-20 bg-neutral-50 p-8 rounded-lg shadow-sm">
                 <h2 className="text-3xl font-bold mb-4 text-center">What Makes Us Different</h2>
                 <p className="text-lg text-neutral-700 text-center max-w-3xl mx-auto">
-                    As a local family business since 2001, we're your neighbors, not a big corporate chain. 
+                    As a local family business since 2003, we're your neighbors, not a big corporate chain. 
                     <br />
                     <br />
                     We take pride in our work and want to collaborate <span className="italic">with you</span> to bring your outdoor space to life.
