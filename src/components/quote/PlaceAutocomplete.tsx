@@ -34,7 +34,7 @@ function PlaceAutocompleteInner({onPlaceSelect}:PlaceAutocompleteProps) {
         if(!ref.current) return;
         if(!defaultElement) return;
 
-        console.log(defaultElement);
+        console.dir(defaultElement);
 
         const input: HTMLInputElement = defaultElement.Eg;
         input.className = "peer h-10 bg-black/10 rounded-lg focus:bg-black/20 focus:outline-1 outline-neutral-600 w-full p-2 "
@@ -45,16 +45,25 @@ function PlaceAutocompleteInner({onPlaceSelect}:PlaceAutocompleteProps) {
         const predictionsAnchor: HTMLDivElement = document.createElement("div");
         predictionsAnchor.className="predictions-anchor";
         predictionsAnchor.append(dropdown)
-   
-        ref.current.append(
+        console.log("Added autocomplete", defaultElement)
+        // console.log(dropdown)
+        ref.current.replaceChildren(
             input,
-            predictionsAnchor
+            defaultElement.Si
         )
+        // ref.current.append(
+        //     )
 
     }, [places, ref])
 
+    if(!places ) {
+
+    }
+
     return <div className="w-full" id="google-maps-autocomplete"> 
-        <div className="widget-container" ref={ref}></div>
+        <div className="widget-container" ref={ref}>
+            <TextInput placeholder="Enter a location" id="location" name="address" />
+        </div>
     </div>
 }
 function PlaceAutocompleteInnerOld({onPlaceSelect}:PlaceAutocompleteProps ) {

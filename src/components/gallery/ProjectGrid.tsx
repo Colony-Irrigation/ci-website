@@ -22,7 +22,6 @@ const RawProjectGallery = memo(function RawProjectGallery({ projects, searchValu
         if(proj.colSpan && proj.colSpan > 1) {
             lastCol++;
             lastCol = lastCol %2;
-            console.log(lastCol)
             thumbnails.push(<ProjectThumbnail project={proj} key={proj.id} alignColumn={lastCol} />)
         } else {
             thumbnails.push(<ProjectThumbnail project={proj} key={proj.id}  />)

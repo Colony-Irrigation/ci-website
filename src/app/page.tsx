@@ -39,7 +39,7 @@ export default function Home() {
                         {/* <hr className="mt-2 shadow shadow-neutral-500 border-amber-950"/> */}
 
                     </div>
-                    Since 2001, we have provided <span className="font-semibold">professional</span> and <span className="font-semibold">affordable</span> lawncare, landscaping, irrigation, and hardscape design services for customers throughout all of Southeast Michigan
+                    Since 2001, we have provided <span className="font-semibold">professional</span> and <span className="font-semibold">affordable</span> lawncare, landscaping, irrigation, and hardscape services for customers in the Canton, Michigan area.
                 </div>
                 <div className="text-center underline py-6">
                     <Link href={"/about"}>More About Us</Link>
