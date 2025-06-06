@@ -21,7 +21,8 @@ import Email from "@/components/Email";
 export const metadata: Metadata = {
   title: "Colony Irrigation",
   description: "Professional landscaping, lawncare, and irrigation services based in Canton, Michigan",
-  keywords: ["sprinklers", "mulch", "landscaping", "lawncare", "cutting grass", "pavers", "masonry", "outdoors", "curb appeal", "canton"]
+  keywords: [
+    "sprinklers", "mulch", "landscaping", "lawncare", "cutting grass", "pavers", "masonry", "outdoors", "curb appeal", "canton", "michigan", " sprinkler startups", "winterizations", "sprinkler repairs"]
 };
 
 export default function RootLayout({
