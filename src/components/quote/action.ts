@@ -1,18 +1,35 @@
 "use server";
-import {createTransport} from "nodemailer";
+import { createTransport } from "nodemailer";
 import { jobsToTitles } from "./JobTitles";
+import Mail from "nodemailer/lib/mailer";
 
 const transport = createTransport({
     service: "gmail",
     auth: {
         user: process.env.INTERNAL_EMAIL_ADDRESS,
         pass: process.env.INTERNAL_EMAIL_PASSWORD,
-
-    }
+    },
+    secure: true,
 });
 
+function sendEmail(mail: Mail.Options) {
+    return new Promise((resolve, reject) => {
+        transport.sendMail(mail, (err, info) => {
+            if (err) {
+                reject(err);
+            } else {
+                resolve(info);
+            }
+        });
+    });
+}
 
-export default async function submit(formData: FormData) {
+interface FormState {
+    errorMessage?: string;
+    error?: any;
+    successMessage?: string;
+}
+export default async function submit(formState: FormState, formData: FormData): Promise<FormState> {
     // const contact = formData.get("contactInfo");
     const email = formData.get("emailAddress");
     const phoneNumber = formData.get("phoneNumber");
@@ -22,33 +39,17 @@ export default async function submit(formData: FormData) {
     const jobKind = formData.get("jobKind")
     //@ts-expect-error
     const jobKindString = jobsToTitles[jobKind] || "Unknown";
-    await new Promise((res, rej) => {
-        const emailBody =
-`Customer name: ${name}
+    const internalEmailBody =
+        `Customer name: ${name}
 Email: ${email}
 Phone number: ${phoneNumber}
 Home address: ${address}
 Requested quote for: ${jobKindString} (${jobKind})
 ${extraMessage && `Note:\n${extraMessage}`}
 
-Request processed at ${new Date().toLocaleString("en-US", {timeZone: "EST"})}`; 
+Request processed at ${new Date().toLocaleString("en-US", { timeZone: "EST" })}`;
 
-        transport.sendMail({
-            from: process.env.INTERNAL_EMAIL_ADDRESS,
-            to:  process.env.TARGET_INBOX_ADDRESS,
-            subject: `Quote Request - ${name}`,
-            text: emailBody 
-        }, (err, info) => {
-            if(err) rej(err)
-            else res(info)
-        })
-
-        transport.sendMail({
-            from: process.env.INTERNAL_EMAIL_ADDRESS,
-            to: email as string,
-            subject: `Quote Request Received - ${name}`,
-            text: 
-`Thank you for your quote request, ${name}!
+    const customerEmailBody = `Thank you for your quote request, ${name}!
 
 We will get back to you shortly with more information. If you have any questions or concerns, feel free to reach out:
  
@@ -60,14 +61,29 @@ Best regards,
 Colony Irrigation
 
 
-This is an automated message, please do not reply to this email.`
-        }, (err, info) => {
-            if(err) rej(err)
-            else res(info)
-        })
+This is an automated message, please do not reply to this email.`;
 
+    try {
+        const res1 = await transport.sendMail({
+            from: process.env.INTERNAL_EMAIL_ADDRESS,
+            to: process.env.TARGET_INBOX_ADDRESS,
+            subject: `Quote Request - ${name}`,
+            text: internalEmailBody
+        });
+        const res2 = await transport.sendMail({
+            from: process.env.INTERNAL_EMAIL_ADDRESS,
+            to: email as string,
+            subject: `Quote Request Received - ${name}`,
+            text: customerEmailBody
+        });
+        console.log("Email sent successfully", res1, res2);
+    } catch (err) {
+        return {
+            errorMessage: "Error sending email. Please contact us directly at 734-398-5837"
+        }
+    }
 
-    }).catch((e) => {
-        console.error("Error sending email", e);
-    })
+    return {
+        successMessage: "Quote request sent successfully! We will get back to you shortly."
+    }
 }

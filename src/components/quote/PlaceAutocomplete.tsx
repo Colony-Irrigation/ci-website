@@ -41,9 +41,8 @@ function PlaceAutocompleteInner({onPlaceSelect}:PlaceAutocompleteProps) {
         input.id ="location";
         input.name = "address"
         const dropdown: HTMLDivElement = defaultElement.Fg;
-        const predictionsAnchor: HTMLDivElement = document.createElement("div");
-        predictionsAnchor.className="predictions-anchor";
-        predictionsAnchor.append(dropdown)
+        const predictionsAnchor: HTMLDivElement = defaultElement.Gg;
+        // predictionsAnchor.append(dropdown)
         console.log("Added autocomplete", defaultElement)
         // console.log(dropdown)
         ref.current.replaceChildren(
