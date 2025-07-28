@@ -7,22 +7,12 @@ const transport = createTransport({
     service: "gmail",
     auth: {
         user: process.env.INTERNAL_EMAIL_ADDRESS,
-        pass: process.env.INTERNAL_EMAIL_PASSWORD,
+        pass:  process.env.INTERNAL_EMAIL_PASSWORD,
     },
     secure: true,
 });
 
-function sendEmail(mail: Mail.Options) {
-    return new Promise((resolve, reject) => {
-        transport.sendMail(mail, (err, info) => {
-            if (err) {
-                reject(err);
-            } else {
-                resolve(info);
-            }
-        });
-    });
-}
+
 
 interface FormState {
     errorMessage?: string;
@@ -76,12 +66,10 @@ This is an automated message, please do not reply to this email.`;
             subject: `Quote Request Received - ${name}`,
             text: customerEmailBody
         });
-        console.log("Email sent successfully", res1, res2);
     } catch (err) {
+        console.error("Error sending email", err);
         return {
             errorMessage: "Error sending email. Please contact us directly at 734-398-5837",
-            error: `user: ${process.env.INTERNAL_EMAIL_ADDRESS},
-        pass: ${process.env.INTERNAL_EMAIL_PASSWORD}`,
         }
     }
 
