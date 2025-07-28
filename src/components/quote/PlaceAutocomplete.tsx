@@ -26,7 +26,6 @@ function PlaceAutocompleteInner({onPlaceSelect}:PlaceAutocompleteProps) {
     const ref = useRef<HTMLDivElement>(null);
 
     // This is ugly, but needed to pierce the shadow DOM and add classes to the input element
-
     //@ts-ignore
     const defaultElement = useMemo(() => places && new places.PlaceAutocompleteElement(), [places]);
     useEffect(() => {
@@ -36,12 +35,12 @@ function PlaceAutocompleteInner({onPlaceSelect}:PlaceAutocompleteProps) {
 
         console.dir(defaultElement);
 
-        const input: HTMLInputElement = defaultElement.Eg;
+        const input: HTMLInputElement = defaultElement.Dg;
         input.className = "peer h-10 bg-black/10 rounded-lg focus:bg-black/20 focus:outline-1 outline-neutral-600 w-full p-2 "
         input.placeholder = "Enter a location"
         input.id ="location";
         input.name = "address"
-        const dropdown: HTMLDivElement = defaultElement.Jg;
+        const dropdown: HTMLDivElement = defaultElement.Fg;
         const predictionsAnchor: HTMLDivElement = document.createElement("div");
         predictionsAnchor.className="predictions-anchor";
         predictionsAnchor.append(dropdown)
@@ -49,7 +48,7 @@ function PlaceAutocompleteInner({onPlaceSelect}:PlaceAutocompleteProps) {
         // console.log(dropdown)
         ref.current.replaceChildren(
             input,
-            defaultElement.Si
+            predictionsAnchor
         )
         // ref.current.append(
         //     )

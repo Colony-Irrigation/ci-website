@@ -72,7 +72,7 @@ export default function LandscapingSection() {
                                 <div className="lg:ml-2 text-center grow">Prevents weeds</div>
                             </div>
                             <div className="flex">
-                                <Check className="h-6 w-6 flex-shrink-0" />
+                                <Check className="h-6 w-6 flex-shrink-0 " />
                                 <div className="lg:ml-2 text-center grow">Defines garden areas</div>
                             </div>
                         </div>
