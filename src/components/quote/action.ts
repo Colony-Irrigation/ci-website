@@ -79,7 +79,8 @@ This is an automated message, please do not reply to this email.`;
         console.log("Email sent successfully", res1, res2);
     } catch (err) {
         return {
-            errorMessage: "Error sending email. Please contact us directly at 734-398-5837"
+            errorMessage: "Error sending email. Please contact us directly at 734-398-5837",
+            error: err,
         }
     }
 
