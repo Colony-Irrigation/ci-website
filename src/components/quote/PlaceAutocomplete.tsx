@@ -32,16 +32,16 @@ function PlaceAutocompleteInner({onPlaceSelect}:PlaceAutocompleteProps) {
         if(!places) return;
         if(!ref.current) return;
         if(!defaultElement) return;
+      try {
+console.dir(defaultElement);
 
-        console.dir(defaultElement);
-
-        const input: HTMLInputElement = defaultElement.Dg;
+        const input: HTMLInputElement = defaultElement.Fg;
         input.className = "peer h-10 bg-black/10 rounded-lg focus:bg-black/20 focus:outline-1 outline-neutral-600 w-full p-2 "
         input.placeholder = "Enter a location"
         input.id ="location";
         input.name = "address"
         const dropdown: HTMLDivElement = defaultElement.Fg;
-        const predictionsAnchor: HTMLDivElement = defaultElement.Gg;
+        const predictionsAnchor: HTMLDivElement = defaultElement.bj;
         // predictionsAnchor.append(dropdown)
         console.log("Added autocomplete", defaultElement)
         // console.log(dropdown)
@@ -49,6 +49,11 @@ function PlaceAutocompleteInner({onPlaceSelect}:PlaceAutocompleteProps) {
             input,
             predictionsAnchor
         )
+
+      } catch(e) {
+        console.log("Google may have adjusted the gmp-place-autocomplete component")
+      }
+        
         // ref.current.append(
         //     )
 

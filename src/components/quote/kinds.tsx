@@ -28,7 +28,7 @@ function InternalQuoteCategoryProvider({children}: PropsWithChildren) {
     if(paramsJobKind) {
         quoteCategory = getQuoteCategory(paramsJobKind)
     } else {
-        quoteCategory =searchParams.get("category") as quoteCategory || "other"
+        quoteCategory =searchParams.get("category") as quoteCategory || "sprinkler"
     }
 
     const res = useState<quoteCategory>(quoteCategory);

@@ -8,10 +8,10 @@ const landscapingTitles: Record<landscapingQuoteKind, string> = {
 }
 
 const sprinklerTitles: Record<sprinklerQuoteKind, string> = {
+    winterization: "Winterization",
     install: "Sprinkler Install/Expansion",
     repair: "Rotor/Pipe Repair",
     startup: "Spring Startup",
-    winterization: "Winterization"
 }
 
 const lawncareTitles: Record<lawncareQuoteKind, string> = {

@@ -16,10 +16,10 @@ const landscapingTitles: Record<landscapingQuoteKind, ReactNode> = {
 }
 
 const sprinklerTitles: Record<sprinklerQuoteKind, ReactNode> = {
+    winterization: "Winterization",
     install: "Sprinkler Install/Expansion",
     repair: "Rotor/Pipe Repair",
     startup: "Spring Startup",
-    winterization: "Winterization"
 }
 
 const lawncareTitles: Record<lawncareQuoteKind, ReactNode> = {
@@ -56,7 +56,7 @@ delete jobsToTitles["other-other"]
 
 
 
-export default function JobSelect() {    
+export default function JobSelect() {
     const [open, setOpen] = useState(false);
     const [category, setCategory, potentialKind] = use(QuoteCategoryContext)
     const [selected, setSelected] = useState<quoteKind>(potentialKind || "" as any);
@@ -67,32 +67,32 @@ export default function JobSelect() {
         <div>
             <div className={`h-10 rounded-t-lg ${!open && "rounded-b-lg"} duration-100 bg-black/10 hover:cursor-pointer z-2 flex items-center px-4 border-b-0 border-neutral-600 ${open && "border-2"}`} onClick={() => setOpen(!open)}>
                 <div className="grow">
-                {jobsToTitles[selected]  || <span className="text-black/50">Please Choose an Option </span>}
+                    {jobsToTitles[selected] || <span className="text-black/50">Please Choose an Option </span>}
 
                 </div>
                 <div className="border-l-1 border-neutral-400 pl-2 text-xl font-bold">
                     <span className={`${open && "-scale-y-100"} duration-150 flex justify-center items-center`}>
-                        <BarsArrowDownIcon className="h-6"/>
+                        <BarsArrowDownIcon className="h-6" />
                     </span>
                 </div>
             </div>
             <div className="relative h-0">
                 <div className={`h-0 ${open && "h-fit"} rounded-b-lg border-neutral-600 ${open && "border-2"} border-t-0 overflow-hidden shadow-md shadow-neutral-600 bg-white-muted z-1 duration-100 transition-all divide-y-1 divide-neutral-400 `}>
                     {Object.entries(jobsToTitles).map(([jobKind, title], i) => {
-                        return jobKind.startsWith(category) && 
+                        return jobKind.startsWith(category) &&
                             <div key={i} className={`p-2  hover:bg-black/20 ${selected == jobKind ? "outline-primary -outline-offset-2 outline-2" : ""}`} onClick={() => {
                                 setOpen(false);
                                 setSelected(jobKind as quoteKind)
                             }}>{title}</div>
                     })}
-                    
-                        <JobSelectPopout currentSelection={selected} setSelected={(s) => {
-                            setSelected(s)
-                            setOpen(false)
-                        }} setCategory={(c) => {
-                            setCategory(c)
-                        }} />
-                    
+
+                    <JobSelectPopout currentSelection={selected} setSelected={(s) => {
+                        setSelected(s)
+                        setOpen(false)
+                    }} setCategory={(c) => {
+                        setCategory(c)
+                    }} />
+
                 </div>
             </div>
         </div>

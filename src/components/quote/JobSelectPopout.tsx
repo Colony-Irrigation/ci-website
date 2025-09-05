@@ -29,6 +29,26 @@ export default function JobSelectPopout(props: {
                     </Drawer.Title>
                     <div className="h-0  border-neutral-500 border-1 rounded-lg m-4" />
                     <div className="pb-25 max-w-175 mx-auto">
+                        <JobCategoryHeader className="mt-16 mb-4">Irrigation</JobCategoryHeader>
+                        <section className="space-y-6">
+                            <JobKind jobKind="sprinkler-winterization" readMoreElId="sprinkler-winterization" {...drilledProps}>
+                                Professional winterization to protect your irrigation system from freezing damage during the cold months.
+                                <Image src={"/imgs/Sprinkler-1.jpg"} alt="Sprinkler winterization" width={885} height={667} />
+                            </JobKind>
+                            <JobKind jobKind="sprinkler-install" readMoreElId="sprinkler-install" {...drilledProps}>
+                                Complete sprinkler system installation or expansion to ensure your lawn is thoroughly watered all summer long.
+                                <Image src={"/imgs/Sprinkler-Box.jpg"} alt="Sprinkler installation" width={1080} height={810} />
+                            </JobKind>
+                            <JobKind jobKind="sprinkler-startup" readMoreElId="sprinkler-startup" {...drilledProps}>
+                                Spring activation and inspection fo your sprinkler system. We provide repairs, adjustments, and system reprogramming for the growing season.
+                                <Image src={"/imgs/Sprinkler-2.jpg"} alt="Sprinkler startup service" width={984} height={738} />
+                            </JobKind>
+                            <JobKind jobKind="sprinkler-repair" readMoreElId="sprinkler-repair" {...drilledProps}>
+                                Diagnosis and repair of leaks, broken heads, malfunctioning valves, and other irrigation system issues.
+                                <Image src={"/imgs/Broken-Sprinkler.jpg"} alt="Sprinkler repair service" width={443} height={332} />
+                            </JobKind>
+                        </section>
+
                         <JobCategoryHeader className="mb-4">Lawncare</JobCategoryHeader>
                         <section className="space-y-6">
                             <JobKind jobKind="lawncare-weekly" readMoreElId="lawncare-weekly" {...drilledProps}>
@@ -40,26 +60,6 @@ export default function JobSelectPopout(props: {
                                 <Image src={"/imgs/Leaf-Blower.jpg"} alt="Seasonal lawn cleanup" width={1874} height={1412} />
                             </JobKind>
 
-                        </section>
-
-                        <JobCategoryHeader className="mt-16 mb-4">Irrigation</JobCategoryHeader>
-                        <section className="space-y-6">
-                            <JobKind jobKind="sprinkler-install" readMoreElId="sprinkler-install" {...drilledProps}>
-                                Complete sprinkler system installation or expansion to ensure your lawn is thoroughly watered all summer long.
-                                <Image src={"/imgs/Sprinkler-Box.jpg"} alt="Sprinkler installation" width={1080} height={810} />
-                            </JobKind>
-                            <JobKind jobKind="sprinkler-startup" readMoreElId="sprinkler-startup" {...drilledProps}>
-                                Spring activation and inspection fo your sprinkler system. We provide repairs, adjustments, and system reprogramming for the growing season.
-                                <Image src={"/imgs/Sprinkler-2.jpg"} alt="Sprinkler startup service" width={984} height={738} />
-                            </JobKind>
-                            <JobKind jobKind="sprinkler-winterization" readMoreElId="sprinkler-winterization" {...drilledProps}>
-                                Professional winterization to protect your irrigation system from freezing damage during the cold months.
-                                <Image src={"/imgs/Sprinkler-1.jpg"} alt="Sprinkler winterization" width={885} height={667} />
-                            </JobKind>
-                            <JobKind jobKind="sprinkler-repair" readMoreElId="sprinkler-repair" {...drilledProps}>
-                                Diagnosis and repair of leaks, broken heads, malfunctioning valves, and other irrigation system issues.
-                                <Image src={"/imgs/Broken-Sprinkler.jpg"} alt="Sprinkler repair service" width={443} height={332} />
-                            </JobKind>
                         </section>
 
                         <JobCategoryHeader className="mt-16 mb-4">Landscaping</JobCategoryHeader>
