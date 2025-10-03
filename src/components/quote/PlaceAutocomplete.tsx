@@ -33,24 +33,33 @@ function PlaceAutocompleteInner({onPlaceSelect}:PlaceAutocompleteProps) {
         if(!ref.current) return;
         if(!defaultElement) return;
       try {
-console.dir(defaultElement);
+        console.dir(defaultElement);
+        const entries = Object.entries(defaultElement);
+        //@ts-ignore
+        const input: HTMLInputElement = entries.find((el) => el[1] instanceof HTMLInputElement)?.[1];
+        if(!input) return;
 
-        const input: HTMLInputElement = defaultElement.Fg;
+        // const input: HTMLInputElement = defaultElement.Fg;
+
         input.className = "peer h-10 bg-black/10 rounded-lg focus:bg-black/20 focus:outline-1 outline-neutral-600 w-full p-2 "
         input.placeholder = "Enter a location"
         input.id ="location";
         input.name = "address"
         const dropdown: HTMLDivElement = defaultElement.Fg;
-        const predictionsAnchor: HTMLDivElement = defaultElement.bj;
+        const predictionsAnchor = entries.find(([_, v]: [string, any]) => v&& v.className && v.className.includes("predictions-anchor"))?.[1];
+        if(!predictionsAnchor) return;
+        // const predictionsAnchor: HTMLDivElement = defaultElement.bj;
         // predictionsAnchor.append(dropdown)
         console.log("Added autocomplete", defaultElement)
         // console.log(dropdown)
         ref.current.replaceChildren(
             input,
+            //@ts-ignore
             predictionsAnchor
         )
 
       } catch(e) {
+        console.log(e)
         console.log("Google may have adjusted the gmp-place-autocomplete component")
       }
         
