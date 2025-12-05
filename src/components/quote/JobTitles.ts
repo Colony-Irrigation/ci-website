@@ -25,7 +25,7 @@ const masonryTitles: Record<masonryQuoteKind, string> = {
     patio: "Patio Install",
     repair: "Stone Repair & Re-leveling"
 }
-
+//
 
 const categoriesToTitles: Record<quoteCategory, Record<string, string>> = {
     landscaping: landscapingTitles,

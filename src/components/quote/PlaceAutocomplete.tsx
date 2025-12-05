@@ -114,10 +114,10 @@ export default function PlaceAutocomplete() {
 declare module 'react' {
   namespace JSX {
     interface IntrinsicElements {
-      'gmp-place-autocomplete': React.DetailedHTMLProps<
-        React.HTMLAttributes<google.maps.places.PlaceAutocompleteElement>,
-        google.maps.places.PlaceAutocompleteElement
-      >;
+      // 'gmp-place-autocomplete': React.DetailedHTMLProps<
+      //   React.HTMLAttributes<google.maps.places.PlaceAutocompleteElement>,
+      //   google.maps.places.PlaceAutocompleteElement
+      // >;
     }
   }
 }
